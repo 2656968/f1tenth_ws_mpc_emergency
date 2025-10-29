@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-16074b3e53c07e847b46.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "vesc_ackermann",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ackermann_to_vesc_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ackermann_to_vesc_node-211f0c0bfeca51edcffe.json",
+					"name" : "ackermann_to_vesc_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-d67597f58124755c48e6.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vesc_ackermann::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vesc_ackermann-ab2ca0e8f5db8b0de556.json",
+					"name" : "vesc_ackermann",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vesc_ackermann_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vesc_ackermann_uninstall-f6086b63a0b942c7bcac.json",
+					"name" : "vesc_ackermann_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vesc_to_odom_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vesc_to_odom_node-06b6af78cd30246263ea.json",
+					"name" : "vesc_to_odom_node",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/meric/f1tenth_ws_mpc_emergency/build/vesc_ackermann",
+		"source" : "/home/meric/f1tenth_ws_mpc_emergency/src/f1tenth_system/vesc/vesc_ackermann"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

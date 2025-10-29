@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/vesc_to_odom_node.dir/rclcpp_components/node_main_vesc_to_odom_node.cpp.o"
+  "CMakeFiles/vesc_to_odom_node.dir/rclcpp_components/node_main_vesc_to_odom_node.cpp.o.d"
   "vesc_to_odom_node"
   "vesc_to_odom_node.pdb"
 )

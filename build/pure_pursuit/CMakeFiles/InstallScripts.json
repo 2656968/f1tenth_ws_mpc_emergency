@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/meric/f1tenth_ws_mpc_emergency/build/pure_pursuit/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

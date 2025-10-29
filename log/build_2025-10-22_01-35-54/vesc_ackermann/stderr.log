@@ -1,0 +1,2 @@
+2025/10/22 01:35:58.801526 cmd_run.go:1398: WARNING: cannot create user data directory: failed to verify SELinux context of /home/meric/snap: cannot locate "matchpathcon" executable
+2025/10/22 01:35:59.210588 cmd_run.go:1398: WARNING: cannot create user data directory: failed to verify SELinux context of /home/meric/snap: cannot locate "matchpathcon" executable

@@ -29,6 +29,13 @@ ament_auto_add_library(${PROJECT_NAME} SHARED
 target_link_libraries(${PROJECT_NAME}
   ${CMAKE_THREAD_LIBS_INIT}
 )
+
+# 명시적으로 종속 라이브러리 연결(중복이어도 안전)
+ament_target_dependencies(${PROJECT_NAME}
+  serial_driver
+  io_context
+)
+
 rclcpp_components_register_node(${PROJECT_NAME}
   PLUGIN vesc_driver::VescDriver
   EXECUTABLE ${PROJECT_NAME}_node
@@ -38,6 +45,12 @@ ament_auto_add_executable(
   vesc_device_namer
   src/vesc_device_namer.cpp
   src/vesc_device_uuid_lookup.cpp
+)
+
+# 실행 파일에도 동일 종속 명시
+ament_target_dependencies(vesc_device_namer
+  serial_driver
+  io_context
 )
 
 #############

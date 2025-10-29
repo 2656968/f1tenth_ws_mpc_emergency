@@ -1,9 +1,9 @@
 {
   "package_name": "teleop_tools_msgs",
-  "output_dir": "/home/meric/f1tenth_ws/build/teleop_tools_msgs/rosidl_generator_py/teleop_tools_msgs",
+  "output_dir": "/home/meric/f1tenth_ws_mpc_emergency/build/teleop_tools_msgs/rosidl_generator_py/teleop_tools_msgs",
   "template_dir": "/opt/ros/foxy/share/rosidl_generator_py/cmake/../resource",
   "idl_tuples": [
-    "/home/meric/f1tenth_ws/build/teleop_tools_msgs/rosidl_adapter/teleop_tools_msgs:action/Increment.idl"
+    "/home/meric/f1tenth_ws_mpc_emergency/build/teleop_tools_msgs/rosidl_adapter/teleop_tools_msgs:action/Increment.idl"
   ],
   "ros_interface_dependencies": [
     "action_msgs:/opt/ros/foxy/share/action_msgs/msg/GoalInfo.idl",
@@ -28,7 +28,7 @@
     "/opt/ros/foxy/share/rosidl_generator_py/cmake/../resource/_msg.py.em",
     "/opt/ros/foxy/share/rosidl_generator_py/cmake/../resource/_srv_pkg_typesupport_entry_point.c.em",
     "/opt/ros/foxy/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
-    "/home/meric/f1tenth_ws/build/teleop_tools_msgs/rosidl_adapter/teleop_tools_msgs/action/Increment.idl",
+    "/home/meric/f1tenth_ws_mpc_emergency/build/teleop_tools_msgs/rosidl_adapter/teleop_tools_msgs/action/Increment.idl",
     "/opt/ros/foxy/share/action_msgs/msg/GoalInfo.idl",
     "/opt/ros/foxy/share/action_msgs/msg/GoalStatus.idl",
     "/opt/ros/foxy/share/action_msgs/msg/GoalStatusArray.idl",

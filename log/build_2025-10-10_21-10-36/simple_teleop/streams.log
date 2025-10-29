@@ -1,0 +1,37 @@
+[2.357s] Invoking command in '/home/meric/f1tenth_ws_mpc_emergency/src/simple_teleop': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/meric/f1tenth_ws_mpc_emergency/build/simple_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/simple_teleop build --build-base /home/meric/f1tenth_ws_mpc_emergency/build/simple_teleop/build install --record /home/meric/f1tenth_ws_mpc_emergency/build/simple_teleop/install.log --install-scripts $base/lib/simple_teleop --single-version-externally-managed install_data
+[8.006s] running egg_info
+[8.007s] creating ../../build/simple_teleop/simple_teleop.egg-info
+[8.007s] writing ../../build/simple_teleop/simple_teleop.egg-info/PKG-INFO
+[8.007s] writing dependency_links to ../../build/simple_teleop/simple_teleop.egg-info/dependency_links.txt
+[8.007s] writing entry points to ../../build/simple_teleop/simple_teleop.egg-info/entry_points.txt
+[8.007s] writing requirements to ../../build/simple_teleop/simple_teleop.egg-info/requires.txt
+[8.007s] writing top-level names to ../../build/simple_teleop/simple_teleop.egg-info/top_level.txt
+[8.008s] writing manifest file '../../build/simple_teleop/simple_teleop.egg-info/SOURCES.txt'
+[8.008s] reading manifest file '../../build/simple_teleop/simple_teleop.egg-info/SOURCES.txt'
+[8.008s] writing manifest file '../../build/simple_teleop/simple_teleop.egg-info/SOURCES.txt'
+[8.008s] running build
+[8.008s] running build_py
+[8.008s] creating /home/meric/f1tenth_ws_mpc_emergency/build/simple_teleop/build
+[8.008s] creating /home/meric/f1tenth_ws_mpc_emergency/build/simple_teleop/build/lib
+[8.008s] creating /home/meric/f1tenth_ws_mpc_emergency/build/simple_teleop/build/lib/simple_teleop
+[8.009s] copying simple_teleop/__init__.py -> /home/meric/f1tenth_ws_mpc_emergency/build/simple_teleop/build/lib/simple_teleop
+[8.009s] copying simple_teleop/simple_teleop.py -> /home/meric/f1tenth_ws_mpc_emergency/build/simple_teleop/build/lib/simple_teleop
+[8.009s] running install
+[8.009s] running install_lib
+[8.009s] creating /home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop/lib/python3.8/site-packages/simple_teleop
+[8.009s] copying /home/meric/f1tenth_ws_mpc_emergency/build/simple_teleop/build/lib/simple_teleop/__init__.py -> /home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop/lib/python3.8/site-packages/simple_teleop
+[8.009s] copying /home/meric/f1tenth_ws_mpc_emergency/build/simple_teleop/build/lib/simple_teleop/simple_teleop.py -> /home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop/lib/python3.8/site-packages/simple_teleop
+[8.009s] byte-compiling /home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop/lib/python3.8/site-packages/simple_teleop/__init__.py to __init__.cpython-38.pyc
+[8.010s] byte-compiling /home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop/lib/python3.8/site-packages/simple_teleop/simple_teleop.py to simple_teleop.cpython-38.pyc
+[8.010s] running install_data
+[8.010s] creating /home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop/share/ament_index
+[8.010s] creating /home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop/share/ament_index/resource_index
+[8.010s] creating /home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop/share/ament_index/resource_index/packages
+[8.010s] copying resource/simple_teleop -> /home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop/share/ament_index/resource_index/packages
+[8.010s] copying package.xml -> /home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop/share/simple_teleop
+[8.010s] running install_egg_info
+[8.011s] Copying ../../build/simple_teleop/simple_teleop.egg-info to /home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop/lib/python3.8/site-packages/simple_teleop-0.0.0-py3.8.egg-info
+[8.011s] running install_scripts
+[8.011s] Installing simple_teleop script to /home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop/lib/simple_teleop
+[8.011s] writing list of installed files to '/home/meric/f1tenth_ws_mpc_emergency/build/simple_teleop/install.log'
+[8.061s] Invoked command in '/home/meric/f1tenth_ws_mpc_emergency/src/simple_teleop' returned '0': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/meric/f1tenth_ws_mpc_emergency/build/simple_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/simple_teleop build --build-base /home/meric/f1tenth_ws_mpc_emergency/build/simple_teleop/build install --record /home/meric/f1tenth_ws_mpc_emergency/build/simple_teleop/install.log --install-scripts $base/lib/simple_teleop --single-version-externally-managed install_data

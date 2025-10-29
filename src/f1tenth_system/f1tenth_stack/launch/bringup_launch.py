@@ -72,25 +72,32 @@ def generate_launch_description():
     ld = LaunchDescription([joy_la, vesc_la, sensors_la, mux_la])
 
     joy_node = Node(
-        package='joy',
-        executable='joy_node',
-        name='joy',
-        parameters=[LaunchConfiguration('joy_config')]
-    )
-    
+    package='joy',
+    executable='joy_node',
+    name='joy'
+)
+
+    simple_teleop_node = Node(
+    package='simple_teleop',
+    executable='simple_teleop',
+    name='simple_teleop'
+)
+
+# joy_teleop_node를 주석 처리하여 비활성화합니다.
+# joy_teleop_node = Node(...)
+
+# joy_teleop_node 노드를 주석 처리하여 비활성화합니다.
     joy_teleop_node = Node(
         package='joy_teleop',
         executable='joy_teleop',
         name='joy_teleop',
         parameters=[LaunchConfiguration('joy_config')]
-    )
+ )
     ackermann_to_vesc_node = Node(
         package='vesc_ackermann',
         executable='ackermann_to_vesc_node',
         name='ackermann_to_vesc_node',
-        parameters=[LaunchConfiguration('vesc_config')
-        ]
-        
+        parameters=[LaunchConfiguration('vesc_config')]
     )
     vesc_to_odom_node = Node(
         package='vesc_ackermann',
@@ -146,7 +153,8 @@ def generate_launch_description():
 
     # finalize
     ld.add_action(joy_node)
-    ld.add_action(joy_teleop_node)
+    ld.add_action(simple_teleop_node) 
+    ld.add_action(joy_teleop_node)  
     ld.add_action(ackermann_to_vesc_node)
     ld.add_action(vesc_to_odom_node)
     ld.add_action(vesc_driver_node)
@@ -155,6 +163,5 @@ def generate_launch_description():
     ld.add_action(ackermann_mux_node)
     ld.add_action(static_tf_node)
     ld.add_action(static_imu_tf_node)
-    #ld.add_action(imu_tf_node)
 
     return ld

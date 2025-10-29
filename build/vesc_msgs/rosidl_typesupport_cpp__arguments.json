@@ -1,12 +1,12 @@
 {
   "package_name": "vesc_msgs",
-  "output_dir": "/home/meric/f1tenth_ws/build/vesc_msgs/rosidl_typesupport_cpp/vesc_msgs",
+  "output_dir": "/home/meric/f1tenth_ws_mpc_emergency/build/vesc_msgs/rosidl_typesupport_cpp/vesc_msgs",
   "template_dir": "/opt/ros/foxy/share/rosidl_typesupport_cpp/resource",
   "idl_tuples": [
-    "/home/meric/f1tenth_ws/build/vesc_msgs/rosidl_adapter/vesc_msgs:msg/VescState.idl",
-    "/home/meric/f1tenth_ws/build/vesc_msgs/rosidl_adapter/vesc_msgs:msg/VescStateStamped.idl",
-    "/home/meric/f1tenth_ws/build/vesc_msgs/rosidl_adapter/vesc_msgs:msg/VescImu.idl",
-    "/home/meric/f1tenth_ws/build/vesc_msgs/rosidl_adapter/vesc_msgs:msg/VescImuStamped.idl"
+    "/home/meric/f1tenth_ws_mpc_emergency/build/vesc_msgs/rosidl_adapter/vesc_msgs:msg/VescState.idl",
+    "/home/meric/f1tenth_ws_mpc_emergency/build/vesc_msgs/rosidl_adapter/vesc_msgs:msg/VescStateStamped.idl",
+    "/home/meric/f1tenth_ws_mpc_emergency/build/vesc_msgs/rosidl_adapter/vesc_msgs:msg/VescImu.idl",
+    "/home/meric/f1tenth_ws_mpc_emergency/build/vesc_msgs/rosidl_adapter/vesc_msgs:msg/VescImuStamped.idl"
   ],
   "ros_interface_dependencies": [
     "builtin_interfaces:/opt/ros/foxy/share/builtin_interfaces/msg/Duration.idl",
@@ -78,10 +78,10 @@
     "/opt/ros/foxy/share/rosidl_typesupport_cpp/resource/idl__type_support.cpp.em",
     "/opt/ros/foxy/share/rosidl_typesupport_cpp/resource/msg__type_support.cpp.em",
     "/opt/ros/foxy/share/rosidl_typesupport_cpp/resource/srv__type_support.cpp.em",
-    "/home/meric/f1tenth_ws/build/vesc_msgs/rosidl_adapter/vesc_msgs/msg/VescState.idl",
-    "/home/meric/f1tenth_ws/build/vesc_msgs/rosidl_adapter/vesc_msgs/msg/VescStateStamped.idl",
-    "/home/meric/f1tenth_ws/build/vesc_msgs/rosidl_adapter/vesc_msgs/msg/VescImu.idl",
-    "/home/meric/f1tenth_ws/build/vesc_msgs/rosidl_adapter/vesc_msgs/msg/VescImuStamped.idl",
+    "/home/meric/f1tenth_ws_mpc_emergency/build/vesc_msgs/rosidl_adapter/vesc_msgs/msg/VescState.idl",
+    "/home/meric/f1tenth_ws_mpc_emergency/build/vesc_msgs/rosidl_adapter/vesc_msgs/msg/VescStateStamped.idl",
+    "/home/meric/f1tenth_ws_mpc_emergency/build/vesc_msgs/rosidl_adapter/vesc_msgs/msg/VescImu.idl",
+    "/home/meric/f1tenth_ws_mpc_emergency/build/vesc_msgs/rosidl_adapter/vesc_msgs/msg/VescImuStamped.idl",
     "/opt/ros/foxy/share/builtin_interfaces/msg/Duration.idl",
     "/opt/ros/foxy/share/builtin_interfaces/msg/Time.idl",
     "/opt/ros/foxy/share/std_msgs/msg/Bool.idl",

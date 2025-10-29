@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/vesc_driver_node.dir/rclcpp_components/node_main_vesc_driver_node.cpp.o"
+  "CMakeFiles/vesc_driver_node.dir/rclcpp_components/node_main_vesc_driver_node.cpp.o.d"
   "vesc_driver_node"
   "vesc_driver_node.pdb"
 )

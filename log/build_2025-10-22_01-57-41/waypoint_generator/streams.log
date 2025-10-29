@@ -1,0 +1,29 @@
+[1.211s] Invoking command in '/home/meric/f1tenth_ws_mpc_emergency/build/waypoint_generator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meric/f1tenth_ws_mpc_emergency/install/f1tenth_stack:/home/meric/f1tenth_ws_mpc_emergency/install/joy_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/stanley2_avoidance:/home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/particle_filter:/home/meric/f1tenth_ws_mpc_emergency/install/mouse_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/key_teleop:/opt/ros/foxy /snap/bin/cmake --build /home/meric/f1tenth_ws_mpc_emergency/build/waypoint_generator -- -j6 -l6
+[1.331s] 2025/10/22 01:57:47.673576 cmd_run.go:1398: WARNING: cannot create user data directory: failed to verify SELinux context of /home/meric/snap: cannot locate "matchpathcon" executable
+[1.432s] [ 50%] Built target waypoint_generator
+[1.434s] [100%] Built target waypoint_visualizer
+[1.447s] Invoked command in '/home/meric/f1tenth_ws_mpc_emergency/build/waypoint_generator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meric/f1tenth_ws_mpc_emergency/install/f1tenth_stack:/home/meric/f1tenth_ws_mpc_emergency/install/joy_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/stanley2_avoidance:/home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/particle_filter:/home/meric/f1tenth_ws_mpc_emergency/install/mouse_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/key_teleop:/opt/ros/foxy /snap/bin/cmake --build /home/meric/f1tenth_ws_mpc_emergency/build/waypoint_generator -- -j6 -l6
+[1.450s] Invoking command in '/home/meric/f1tenth_ws_mpc_emergency/build/waypoint_generator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meric/f1tenth_ws_mpc_emergency/install/f1tenth_stack:/home/meric/f1tenth_ws_mpc_emergency/install/joy_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/stanley2_avoidance:/home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/particle_filter:/home/meric/f1tenth_ws_mpc_emergency/install/mouse_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/key_teleop:/opt/ros/foxy /snap/bin/cmake --build /home/meric/f1tenth_ws_mpc_emergency/build/waypoint_generator --target install -- -j6 -l6
+[1.587s] 2025/10/22 01:57:47.929971 cmd_run.go:1398: WARNING: cannot create user data directory: failed to verify SELinux context of /home/meric/snap: cannot locate "matchpathcon" executable
+[1.685s] [100%] Built target waypoint_generator
+[1.685s] [100%] Built target waypoint_visualizer
+[1.695s] [36mInstall the project...[0m
+[1.699s] -- Install configuration: ""
+[1.699s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/waypoint_generator/lib/waypoint_generator/waypoint_generator
+[1.699s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/waypoint_generator/lib/waypoint_generator/waypoint_visualizer
+[1.700s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/waypoint_generator/share/ament_index/resource_index/package_run_dependencies/waypoint_generator
+[1.700s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/waypoint_generator/share/ament_index/resource_index/parent_prefix_path/waypoint_generator
+[1.700s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/waypoint_generator/share/waypoint_generator/environment/ament_prefix_path.sh
+[1.700s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/waypoint_generator/share/waypoint_generator/environment/ament_prefix_path.dsv
+[1.700s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/waypoint_generator/share/waypoint_generator/environment/path.sh
+[1.701s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/waypoint_generator/share/waypoint_generator/environment/path.dsv
+[1.701s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/waypoint_generator/share/waypoint_generator/local_setup.bash
+[1.701s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/waypoint_generator/share/waypoint_generator/local_setup.sh
+[1.701s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/waypoint_generator/share/waypoint_generator/local_setup.zsh
+[1.701s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/waypoint_generator/share/waypoint_generator/local_setup.dsv
+[1.701s] -- Installing: /home/meric/f1tenth_ws_mpc_emergency/install/waypoint_generator/share/waypoint_generator/package.dsv
+[1.702s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/waypoint_generator/share/ament_index/resource_index/packages/waypoint_generator
+[1.702s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/waypoint_generator/share/waypoint_generator/cmake/waypoint_generatorConfig.cmake
+[1.702s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/waypoint_generator/share/waypoint_generator/cmake/waypoint_generatorConfig-version.cmake
+[1.702s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/waypoint_generator/share/waypoint_generator/package.xml
+[2.225s] Invoked command in '/home/meric/f1tenth_ws_mpc_emergency/build/waypoint_generator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meric/f1tenth_ws_mpc_emergency/install/f1tenth_stack:/home/meric/f1tenth_ws_mpc_emergency/install/joy_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/stanley2_avoidance:/home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/particle_filter:/home/meric/f1tenth_ws_mpc_emergency/install/mouse_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/key_teleop:/opt/ros/foxy /snap/bin/cmake --build /home/meric/f1tenth_ws_mpc_emergency/build/waypoint_generator --target install -- -j6 -l6

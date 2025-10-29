@@ -8,7 +8,7 @@ class WaypointVisualizer : public rclcpp::Node {
 public:
     WaypointVisualizer() : Node("waypoint_visualizer") {
         publisher_ = this->create_publisher<visualization_msgs::msg::MarkerArray>("waypoints_marker", 10);
-        this->declare_parameter<std::string>("csv_path", "/home/meric/f1tenth_ws/src/waypoint_generator/src/waypoints_opt.csv");
+        this->declare_parameter<std::string>("csv_path", "/home/meric/f1tenth_ws/src/waypoint_generator/src/waypoints_opt2.csv");
 
         std::string csv_path = this->get_parameter("csv_path").as_string();
 

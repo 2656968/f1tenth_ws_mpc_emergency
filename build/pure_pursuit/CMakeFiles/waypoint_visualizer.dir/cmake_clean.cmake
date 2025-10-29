@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/waypoint_visualizer.dir/src/waypoint_visualizer.cpp.o"
+  "CMakeFiles/waypoint_visualizer.dir/src/waypoint_visualizer.cpp.o.d"
   "waypoint_visualizer"
   "waypoint_visualizer.pdb"
 )

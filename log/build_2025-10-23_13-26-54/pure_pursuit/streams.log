@@ -1,0 +1,37 @@
+[0.030s] Invoking command in '/home/meric/f1tenth_ws_mpc_emergency/build/pure_pursuit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meric/f1tenth_ws_mpc_emergency/install/f1tenth_stack:/home/meric/f1tenth_ws_mpc_emergency/install/joy_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/stanley2_avoidance:/home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/particle_filter:/home/meric/f1tenth_ws_mpc_emergency/install/mouse_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/key_teleop:/opt/ros/foxy /snap/bin/cmake --build /home/meric/f1tenth_ws_mpc_emergency/build/pure_pursuit -- -j6 -l6
+[0.157s] 2025/10/23 13:26:57.486429 cmd_run.go:1398: WARNING: cannot create user data directory: failed to verify SELinux context of /home/meric/snap: cannot locate "matchpathcon" executable
+[0.271s] [ 50%] Built target waypoint_visualizer
+[0.294s] [100%] Built target pure_pursuit
+[0.328s] Invoked command in '/home/meric/f1tenth_ws_mpc_emergency/build/pure_pursuit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meric/f1tenth_ws_mpc_emergency/install/f1tenth_stack:/home/meric/f1tenth_ws_mpc_emergency/install/joy_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/stanley2_avoidance:/home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/particle_filter:/home/meric/f1tenth_ws_mpc_emergency/install/mouse_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/key_teleop:/opt/ros/foxy /snap/bin/cmake --build /home/meric/f1tenth_ws_mpc_emergency/build/pure_pursuit -- -j6 -l6
+[0.336s] Invoking command in '/home/meric/f1tenth_ws_mpc_emergency/build/pure_pursuit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meric/f1tenth_ws_mpc_emergency/install/f1tenth_stack:/home/meric/f1tenth_ws_mpc_emergency/install/joy_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/stanley2_avoidance:/home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/particle_filter:/home/meric/f1tenth_ws_mpc_emergency/install/mouse_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/key_teleop:/opt/ros/foxy /snap/bin/cmake --build /home/meric/f1tenth_ws_mpc_emergency/build/pure_pursuit --target install -- -j6 -l6
+[0.517s] 2025/10/23 13:26:57.845887 cmd_run.go:1398: WARNING: cannot create user data directory: failed to verify SELinux context of /home/meric/snap: cannot locate "matchpathcon" executable
+[0.640s] [ 50%] Built target waypoint_visualizer
+[0.650s] [100%] Built target pure_pursuit
+[0.665s] [36mInstall the project...[0m
+[0.674s] -- Install configuration: ""
+[0.675s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/pure_pursuit/lib/pure_pursuit/pure_pursuit
+[0.676s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/pure_pursuit/lib/pure_pursuit/waypoint_visualizer
+[0.676s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/pure_pursuit/share/pure_pursuit/launch
+[0.677s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/pure_pursuit/share/pure_pursuit/launch/pure_pursuit_launch.py
+[0.677s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/pure_pursuit/share/pure_pursuit/launch/sim_pure_pursuit.rviz
+[0.677s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/pure_pursuit/share/pure_pursuit/launch/sim_pure_pursuit_launch.py
+[0.677s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/pure_pursuit/share/pure_pursuit/launch/pure_pursuit.rviz
+[0.677s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/pure_pursuit/share/pure_pursuit/config
+[0.677s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/pure_pursuit/share/pure_pursuit/config/config.yaml
+[0.677s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/pure_pursuit/share/pure_pursuit/config/sim_config.yaml
+[0.678s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/pure_pursuit/share/ament_index/resource_index/package_run_dependencies/pure_pursuit
+[0.678s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/pure_pursuit/share/ament_index/resource_index/parent_prefix_path/pure_pursuit
+[0.678s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/pure_pursuit/share/pure_pursuit/environment/ament_prefix_path.sh
+[0.679s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/pure_pursuit/share/pure_pursuit/environment/ament_prefix_path.dsv
+[0.679s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/pure_pursuit/share/pure_pursuit/environment/path.sh
+[0.679s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/pure_pursuit/share/pure_pursuit/environment/path.dsv
+[0.679s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/pure_pursuit/share/pure_pursuit/local_setup.bash
+[0.679s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/pure_pursuit/share/pure_pursuit/local_setup.sh
+[0.679s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/pure_pursuit/share/pure_pursuit/local_setup.zsh
+[0.680s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/pure_pursuit/share/pure_pursuit/local_setup.dsv
+[0.680s] -- Installing: /home/meric/f1tenth_ws_mpc_emergency/install/pure_pursuit/share/pure_pursuit/package.dsv
+[0.680s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/pure_pursuit/share/ament_index/resource_index/packages/pure_pursuit
+[0.680s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/pure_pursuit/share/pure_pursuit/cmake/pure_pursuitConfig.cmake
+[0.680s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/pure_pursuit/share/pure_pursuit/cmake/pure_pursuitConfig-version.cmake
+[0.680s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/pure_pursuit/share/pure_pursuit/package.xml
+[1.199s] Invoked command in '/home/meric/f1tenth_ws_mpc_emergency/build/pure_pursuit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meric/f1tenth_ws_mpc_emergency/install/f1tenth_stack:/home/meric/f1tenth_ws_mpc_emergency/install/joy_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/stanley2_avoidance:/home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/particle_filter:/home/meric/f1tenth_ws_mpc_emergency/install/mouse_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/key_teleop:/opt/ros/foxy /snap/bin/cmake --build /home/meric/f1tenth_ws_mpc_emergency/build/pure_pursuit --target install -- -j6 -l6

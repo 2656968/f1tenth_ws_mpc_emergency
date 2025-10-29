@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/pure_pursuit.dir/src/pure_pursuit.cpp.o"
+  "CMakeFiles/pure_pursuit.dir/src/pure_pursuit.cpp.o.d"
   "pure_pursuit"
   "pure_pursuit.pdb"
 )

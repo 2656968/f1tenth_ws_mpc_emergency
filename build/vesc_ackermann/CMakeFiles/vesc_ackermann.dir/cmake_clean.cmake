@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/vesc_ackermann.dir/src/ackermann_to_vesc.cpp.o"
+  "CMakeFiles/vesc_ackermann.dir/src/ackermann_to_vesc.cpp.o.d"
   "CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o"
+  "CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o.d"
   "libvesc_ackermann.pdb"
   "libvesc_ackermann.so"
 )

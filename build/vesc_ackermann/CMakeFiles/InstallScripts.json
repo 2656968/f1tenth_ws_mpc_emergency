@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/meric/f1tenth_ws_mpc_emergency/build/vesc_ackermann/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

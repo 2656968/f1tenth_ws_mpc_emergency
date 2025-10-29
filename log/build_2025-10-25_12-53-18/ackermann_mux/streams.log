@@ -1,0 +1,42 @@
+[0.123s] Invoking command in '/home/meric/f1tenth_ws_mpc_emergency/build/ackermann_mux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meric/f1tenth_ws_mpc_emergency/install/f1tenth_stack:/home/meric/f1tenth_ws_mpc_emergency/install/joy_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/stanley2_avoidance:/home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/particle_filter:/home/meric/f1tenth_ws_mpc_emergency/install/mouse_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/key_teleop:/opt/ros/foxy /snap/bin/cmake --build /home/meric/f1tenth_ws_mpc_emergency/build/ackermann_mux -- -j6 -l6
+[1.285s] 2025/10/25 12:53:19.131691 cmd_run.go:1398: WARNING: cannot create user data directory: failed to verify SELinux context of /home/meric/snap: cannot locate "matchpathcon" executable
+[1.380s] [100%] Built target ackermann_mux
+[1.875s] Invoked command in '/home/meric/f1tenth_ws_mpc_emergency/build/ackermann_mux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meric/f1tenth_ws_mpc_emergency/install/f1tenth_stack:/home/meric/f1tenth_ws_mpc_emergency/install/joy_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/stanley2_avoidance:/home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/particle_filter:/home/meric/f1tenth_ws_mpc_emergency/install/mouse_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/key_teleop:/opt/ros/foxy /snap/bin/cmake --build /home/meric/f1tenth_ws_mpc_emergency/build/ackermann_mux -- -j6 -l6
+[2.017s] Invoking command in '/home/meric/f1tenth_ws_mpc_emergency/build/ackermann_mux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meric/f1tenth_ws_mpc_emergency/install/f1tenth_stack:/home/meric/f1tenth_ws_mpc_emergency/install/joy_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/stanley2_avoidance:/home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/particle_filter:/home/meric/f1tenth_ws_mpc_emergency/install/mouse_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/key_teleop:/opt/ros/foxy /snap/bin/cmake --build /home/meric/f1tenth_ws_mpc_emergency/build/ackermann_mux --target install -- -j6 -l6
+[2.153s] 2025/10/25 12:53:21.042898 cmd_run.go:1398: WARNING: cannot create user data directory: failed to verify SELinux context of /home/meric/snap: cannot locate "matchpathcon" executable
+[2.309s] [100%] Built target ackermann_mux
+[2.363s] [36mInstall the project...[0m
+[2.380s] -- Install configuration: ""
+[2.386s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/ackermann_mux/lib/ackermann_mux/ackermann_mux
+[2.386s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/ackermann_mux/share/ackermann_mux/launch
+[2.391s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/ackermann_mux/share/ackermann_mux/launch/ackermann_mux_launch.py
+[2.392s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/ackermann_mux/share/ackermann_mux/config
+[2.392s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/ackermann_mux/share/ackermann_mux/config/joystick.yaml
+[2.392s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/ackermann_mux/share/ackermann_mux/config/ackermann_mux_topics.yaml
+[2.393s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/ackermann_mux/share/ackermann_mux/config/ackermann_mux_locks.yaml
+[2.393s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/ackermann_mux/include
+[2.393s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/ackermann_mux/include/ackermann_mux
+[2.394s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/ackermann_mux/include/ackermann_mux/ackermann_mux_diagnostics_status.hpp
+[2.394s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/ackermann_mux/include/ackermann_mux/params_helpers.hpp
+[2.394s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/ackermann_mux/include/ackermann_mux/ackermann_mux.hpp
+[2.394s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/ackermann_mux/include/ackermann_mux/ackermann_mux_diagnostics.hpp
+[2.394s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/ackermann_mux/include/ackermann_mux/utils.hpp
+[2.394s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/ackermann_mux/include/ackermann_mux/topic_handle.hpp
+[2.395s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/ackermann_mux/share/ament_index/resource_index/package_run_dependencies/ackermann_mux
+[2.395s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/ackermann_mux/share/ament_index/resource_index/parent_prefix_path/ackermann_mux
+[2.395s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/ackermann_mux/share/ackermann_mux/environment/ament_prefix_path.sh
+[2.395s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/ackermann_mux/share/ackermann_mux/environment/ament_prefix_path.dsv
+[2.395s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/ackermann_mux/share/ackermann_mux/environment/path.sh
+[2.395s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/ackermann_mux/share/ackermann_mux/environment/path.dsv
+[2.396s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/ackermann_mux/share/ackermann_mux/local_setup.bash
+[2.396s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/ackermann_mux/share/ackermann_mux/local_setup.sh
+[2.396s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/ackermann_mux/share/ackermann_mux/local_setup.zsh
+[2.396s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/ackermann_mux/share/ackermann_mux/local_setup.dsv
+[2.396s] -- Installing: /home/meric/f1tenth_ws_mpc_emergency/install/ackermann_mux/share/ackermann_mux/package.dsv
+[2.399s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/ackermann_mux/share/ament_index/resource_index/packages/ackermann_mux
+[2.399s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/ackermann_mux/share/ackermann_mux/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.399s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/ackermann_mux/share/ackermann_mux/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.401s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/ackermann_mux/share/ackermann_mux/cmake/ackermann_muxConfig.cmake
+[2.401s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/ackermann_mux/share/ackermann_mux/cmake/ackermann_muxConfig-version.cmake
+[2.401s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/ackermann_mux/share/ackermann_mux/package.xml
+[2.410s] Invoked command in '/home/meric/f1tenth_ws_mpc_emergency/build/ackermann_mux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meric/f1tenth_ws_mpc_emergency/install/f1tenth_stack:/home/meric/f1tenth_ws_mpc_emergency/install/joy_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/stanley2_avoidance:/home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/particle_filter:/home/meric/f1tenth_ws_mpc_emergency/install/mouse_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/key_teleop:/opt/ros/foxy /snap/bin/cmake --build /home/meric/f1tenth_ws_mpc_emergency/build/ackermann_mux --target install -- -j6 -l6

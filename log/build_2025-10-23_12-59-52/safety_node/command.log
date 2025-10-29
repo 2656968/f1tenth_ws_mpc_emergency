@@ -1,0 +1,4 @@
+Invoking command in '/home/meric/f1tenth_ws_mpc_emergency/build/safety_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /snap/bin/cmake --build /home/meric/f1tenth_ws_mpc_emergency/build/safety_node -- -j6 -l6
+Invoked command in '/home/meric/f1tenth_ws_mpc_emergency/build/safety_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /snap/bin/cmake --build /home/meric/f1tenth_ws_mpc_emergency/build/safety_node -- -j6 -l6
+Invoking command in '/home/meric/f1tenth_ws_mpc_emergency/build/safety_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /snap/bin/cmake --build /home/meric/f1tenth_ws_mpc_emergency/build/safety_node --target install -- -j6 -l6
+Invoked command in '/home/meric/f1tenth_ws_mpc_emergency/build/safety_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /snap/bin/cmake --build /home/meric/f1tenth_ws_mpc_emergency/build/safety_node --target install -- -j6 -l6

@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/safety_node.dir/src/safety_node.cpp.o"
+  "CMakeFiles/safety_node.dir/src/safety_node.cpp.o.d"
   "safety_node"
   "safety_node.pdb"
 )

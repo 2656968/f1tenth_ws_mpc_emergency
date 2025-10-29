@@ -1,0 +1,137 @@
+[0.138s] Invoking command in '/home/meric/f1tenth_ws_mpc_emergency/build/teleop_tools_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meric/f1tenth_ws_mpc_emergency/install/f1tenth_stack:/home/meric/f1tenth_ws_mpc_emergency/install/joy_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/stanley2_avoidance:/home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/particle_filter:/home/meric/f1tenth_ws_mpc_emergency/install/mouse_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/key_teleop:/opt/ros/foxy /snap/bin/cmake --build /home/meric/f1tenth_ws_mpc_emergency/build/teleop_tools_msgs -- -j6 -l6
+[1.434s] [  9%] Built target teleop_tools_msgs__rosidl_generator_c
+[1.435s] [ 12%] Built target teleop_tools_msgs__cpp
+[1.435s] [ 22%] Built target teleop_tools_msgs__rosidl_typesupport_introspection_c
+[1.435s] [ 32%] Built target teleop_tools_msgs__rosidl_typesupport_fastrtps_cpp
+[1.435s] [ 41%] Built target teleop_tools_msgs__rosidl_typesupport_cpp
+[1.435s] [ 51%] Built target teleop_tools_msgs__rosidl_typesupport_c
+[1.435s] [ 61%] Built target teleop_tools_msgs__rosidl_typesupport_introspection_cpp
+[1.435s] [ 70%] Built target teleop_tools_msgs__rosidl_typesupport_fastrtps_c
+[1.436s] [ 70%] Built target teleop_tools_msgs
+[1.436s] [ 74%] Built target teleop_tools_msgs__py
+[1.436s] [ 80%] Built target teleop_tools_msgs__python
+[1.436s] [ 87%] Built target teleop_tools_msgs__rosidl_typesupport_introspection_c__pyext
+[1.436s] [ 93%] Built target teleop_tools_msgs__rosidl_typesupport_fastrtps_c__pyext
+[1.436s] [100%] Built target teleop_tools_msgs__rosidl_typesupport_c__pyext
+[1.437s] 2025/10/22 02:15:40.540115 cmd_run.go:1398: WARNING: cannot create user data directory: failed to verify SELinux context of /home/meric/snap: cannot locate "matchpathcon" executable
+[2.152s] Invoked command in '/home/meric/f1tenth_ws_mpc_emergency/build/teleop_tools_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meric/f1tenth_ws_mpc_emergency/install/f1tenth_stack:/home/meric/f1tenth_ws_mpc_emergency/install/joy_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/stanley2_avoidance:/home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/particle_filter:/home/meric/f1tenth_ws_mpc_emergency/install/mouse_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/key_teleop:/opt/ros/foxy /snap/bin/cmake --build /home/meric/f1tenth_ws_mpc_emergency/build/teleop_tools_msgs -- -j6 -l6
+[2.163s] Invoking command in '/home/meric/f1tenth_ws_mpc_emergency/build/teleop_tools_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meric/f1tenth_ws_mpc_emergency/install/f1tenth_stack:/home/meric/f1tenth_ws_mpc_emergency/install/joy_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/stanley2_avoidance:/home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/particle_filter:/home/meric/f1tenth_ws_mpc_emergency/install/mouse_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/key_teleop:/opt/ros/foxy /snap/bin/cmake --build /home/meric/f1tenth_ws_mpc_emergency/build/teleop_tools_msgs --target install -- -j6 -l6
+[2.297s] 2025/10/22 02:15:42.594973 cmd_run.go:1398: WARNING: cannot create user data directory: failed to verify SELinux context of /home/meric/snap: cannot locate "matchpathcon" executable
+[2.429s] [  9%] Built target teleop_tools_msgs__rosidl_generator_c
+[2.436s] [ 12%] Built target teleop_tools_msgs__cpp
+[2.546s] [ 25%] Built target teleop_tools_msgs__rosidl_typesupport_c
+[2.546s] [ 32%] Built target teleop_tools_msgs__rosidl_typesupport_introspection_c
+[2.548s] [ 41%] Built target teleop_tools_msgs__rosidl_typesupport_fastrtps_cpp
+[2.551s] [ 51%] Built target teleop_tools_msgs__rosidl_typesupport_cpp
+[2.577s] [ 61%] Built target teleop_tools_msgs__rosidl_typesupport_introspection_cpp
+[2.590s] [ 70%] Built target teleop_tools_msgs__rosidl_typesupport_fastrtps_c
+[2.645s] [ 70%] Built target teleop_tools_msgs
+[2.682s] [ 74%] Built target teleop_tools_msgs__py
+[2.729s] [ 80%] Built target teleop_tools_msgs__python
+[2.791s] [ 87%] Built target teleop_tools_msgs__rosidl_typesupport_c__pyext
+[2.792s] [ 93%] Built target teleop_tools_msgs__rosidl_typesupport_introspection_c__pyext
+[2.797s] [100%] Built target teleop_tools_msgs__rosidl_typesupport_fastrtps_c__pyext
+[2.861s] [36mInstall the project...[0m
+[2.865s] -- Install configuration: ""
+[2.865s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/ament_index/resource_index/rosidl_interfaces/teleop_tools_msgs
+[2.865s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs
+[2.865s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/msg
+[2.865s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/msg/rosidl_generator_c__visibility_control.h
+[2.865s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/action
+[2.866s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail
+[2.866s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail/increment__functions.h
+[2.866s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail/increment__struct.h
+[2.867s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail/increment__type_support.h
+[2.867s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail/increment__functions.c
+[2.867s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/action/increment.h
+[2.867s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/teleop_tools_msgs/environment/library_path.sh
+[2.867s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/teleop_tools_msgs/environment/library_path.dsv
+[2.867s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/lib/libteleop_tools_msgs__rosidl_generator_c.so
+[2.868s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs
+[2.868s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/msg
+[2.868s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.868s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/action
+[2.868s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail
+[2.868s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail/increment__rosidl_typesupport_fastrtps_c.h
+[2.869s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/lib/libteleop_tools_msgs__rosidl_typesupport_fastrtps_c.so
+[2.869s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs
+[2.869s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/msg
+[2.869s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.869s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/action
+[2.869s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail
+[2.869s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail/increment__rosidl_typesupport_fastrtps_cpp.hpp
+[2.869s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail/dds_fastrtps
+[2.870s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/lib/libteleop_tools_msgs__rosidl_typesupport_fastrtps_cpp.so
+[2.870s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs
+[2.870s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/msg
+[2.870s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.870s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/action
+[2.870s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail
+[2.870s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail/increment__rosidl_typesupport_introspection_c.h
+[2.870s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail/increment__type_support.c
+[2.871s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/lib/libteleop_tools_msgs__rosidl_typesupport_introspection_c.so
+[2.871s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/lib/libteleop_tools_msgs__rosidl_typesupport_c.so
+[2.871s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs
+[2.871s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/msg
+[2.871s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[2.871s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/action
+[2.871s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/action/increment.hpp
+[2.871s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail
+[2.872s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail/increment__struct.hpp
+[2.872s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail/increment__traits.hpp
+[2.872s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail/increment__type_support.hpp
+[2.872s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail/increment__builder.hpp
+[2.872s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs
+[2.872s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/action
+[2.872s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail
+[2.872s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail/increment__rosidl_typesupport_introspection_cpp.hpp
+[2.873s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/include/teleop_tools_msgs/action/detail/increment__type_support.cpp
+[2.873s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/lib/libteleop_tools_msgs__rosidl_typesupport_introspection_cpp.so
+[2.873s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/lib/libteleop_tools_msgs__rosidl_typesupport_cpp.so
+[2.873s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/teleop_tools_msgs/environment/pythonpath.sh
+[2.873s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/teleop_tools_msgs/environment/pythonpath.dsv
+[2.873s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/lib/python3.8/site-packages/teleop_tools_msgs/__init__.py
+[3.004s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/lib/python3.8/site-packages/teleop_tools_msgs/action
+[3.004s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/lib/python3.8/site-packages/teleop_tools_msgs/action/_increment.py
+[3.004s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/lib/python3.8/site-packages/teleop_tools_msgs/action/__init__.py
+[3.005s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/lib/python3.8/site-packages/teleop_tools_msgs/action/_increment_s.c
+[3.005s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/lib/python3.8/site-packages/teleop_tools_msgs/teleop_tools_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+[3.005s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/lib/python3.8/site-packages/teleop_tools_msgs/teleop_tools_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+[3.005s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/lib/python3.8/site-packages/teleop_tools_msgs/teleop_tools_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+[3.005s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/lib/libteleop_tools_msgs__python.so
+[3.006s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/teleop_tools_msgs/action/Increment.idl
+[3.006s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/teleop_tools_msgs/action/Increment.action
+[3.007s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/ament_index/resource_index/package_run_dependencies/teleop_tools_msgs
+[3.007s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/ament_index/resource_index/parent_prefix_path/teleop_tools_msgs
+[3.007s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/teleop_tools_msgs/environment/ament_prefix_path.sh
+[3.007s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/teleop_tools_msgs/environment/ament_prefix_path.dsv
+[3.007s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/teleop_tools_msgs/environment/path.sh
+[3.007s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/teleop_tools_msgs/environment/path.dsv
+[3.008s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/teleop_tools_msgs/local_setup.bash
+[3.008s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/teleop_tools_msgs/local_setup.sh
+[3.008s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/teleop_tools_msgs/local_setup.zsh
+[3.008s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/teleop_tools_msgs/local_setup.dsv
+[3.008s] -- Installing: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/teleop_tools_msgs/package.dsv
+[3.008s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/ament_index/resource_index/packages/teleop_tools_msgs
+[3.008s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/teleop_tools_msgs__rosidl_generator_cExport.cmake
+[3.009s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/teleop_tools_msgs__rosidl_generator_cExport-noconfig.cmake
+[3.009s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/teleop_tools_msgs__rosidl_typesupport_introspection_cExport.cmake
+[3.009s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/teleop_tools_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.010s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/teleop_tools_msgs__rosidl_typesupport_cExport.cmake
+[3.010s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/teleop_tools_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[3.010s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/teleop_tools_msgs__rosidl_generator_cppExport.cmake
+[3.010s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/teleop_tools_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[3.010s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/teleop_tools_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.011s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/teleop_tools_msgs__rosidl_typesupport_cppExport.cmake
+[3.011s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/teleop_tools_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[3.011s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/rosidl_cmake-extras.cmake
+[3.011s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.011s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[3.011s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[3.011s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.011s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.012s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.012s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/teleop_tools_msgsConfig.cmake
+[3.012s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/teleop_tools_msgsConfig-version.cmake
+[3.012s] -- Up-to-date: /home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs/share/teleop_tools_msgs/package.xml
+[3.104s] Invoked command in '/home/meric/f1tenth_ws_mpc_emergency/build/teleop_tools_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meric/f1tenth_ws_mpc_emergency/install/f1tenth_stack:/home/meric/f1tenth_ws_mpc_emergency/install/joy_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/stanley2_avoidance:/home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/particle_filter:/home/meric/f1tenth_ws_mpc_emergency/install/mouse_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/key_teleop:/opt/ros/foxy /snap/bin/cmake --build /home/meric/f1tenth_ws_mpc_emergency/build/teleop_tools_msgs --target install -- -j6 -l6

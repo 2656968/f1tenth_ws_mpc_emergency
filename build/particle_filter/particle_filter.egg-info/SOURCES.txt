@@ -13,6 +13,8 @@ config/localize.yaml
 launch/localize_launch.py
 maps/0523.pgm
 maps/0523.yaml
+maps/1014_f1nal_f1tenth.pgm
+maps/1014_f1nal_f1tenth.yaml
 maps/Hockenheim_map.png
 maps/Hockenheim_map.yaml
 maps/Silverstone_map.png
@@ -33,6 +35,7 @@ maps/e7_floor5_biggest_RAW.pgm
 maps/oksang.pgm
 maps/oksang.yaml
 particle_filter/__init__.py
+particle_filter/particle_filter (copy).py
 particle_filter/particle_filter.py
 particle_filter/utils.py
 resource/particle_filter

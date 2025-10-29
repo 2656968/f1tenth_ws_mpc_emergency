@@ -8,6 +8,7 @@ setup.py
 ../../../build/f1tenth_stack/f1tenth_stack.egg-info/requires.txt
 ../../../build/f1tenth_stack/f1tenth_stack.egg-info/top_level.txt
 ../../../build/f1tenth_stack/f1tenth_stack.egg-info/zip-safe
+config/2025_joy_teleop.yaml
 config/f1tenth_online_async.yaml
 config/joy_teleop.yaml
 config/mux.yaml
