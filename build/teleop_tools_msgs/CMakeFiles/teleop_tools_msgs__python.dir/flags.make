@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\"teleop_tools_msgs\" -Dteleop_tools_msgs__python_EXPORTS
 
-C_INCLUDES = -I/home/meric/f1tenth_ws_mpc_emergency/build/teleop_tools_msgs/rosidl_generator_c -I/home/meric/f1tenth_ws_mpc_emergency/build/teleop_tools_msgs/rosidl_generator_py -I/usr/include/python3.8 -I/home/meric/f1tenth_ws_mpc_emergency/build/teleop_tools_msgs/rosidl_typesupport_c -isystem /opt/ros/foxy/include
+C_INCLUDES = -I/home/meric/f1tenth_ws_rl/build/teleop_tools_msgs/rosidl_generator_c -I/home/meric/f1tenth_ws_rl/build/teleop_tools_msgs/rosidl_generator_py -I/usr/include/python3.8 -I/home/meric/f1tenth_ws_rl/build/teleop_tools_msgs/rosidl_typesupport_c -isystem /opt/ros/foxy/include
 
 C_FLAGS = -std=gnu11 -fPIC -Wall -Wextra
 

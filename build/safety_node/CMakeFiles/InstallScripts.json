@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/home/meric/f1tenth_ws_mpc_emergency/build/safety_node/cmake_install.cmake"
+		"/home/meric/f1tenth_ws_rl/build/safety_node/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

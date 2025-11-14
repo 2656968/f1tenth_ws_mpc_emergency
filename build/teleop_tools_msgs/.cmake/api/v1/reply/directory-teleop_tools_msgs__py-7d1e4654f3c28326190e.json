@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "teleop_tools_msgs__py",
+		"source" : "/home/meric/f1tenth_ws_rl/build/teleop_tools_msgs/teleop_tools_msgs__py"
+	}
+}

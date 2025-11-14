@@ -1,0 +1,101 @@
+[0.055s] Invoking command in '/home/meric/f1tenth_ws_rl/build/waypoint_generator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meric/f1tenth_ws_rl/install/f1tenth_stack:/home/meric/f1tenth_ws_rl/install/joy_teleop:/home/meric/f1tenth_ws_rl/install/stanley2_avoidance:/home/meric/f1tenth_ws_rl/install/simple_teleop:/home/meric/f1tenth_ws_rl/install/particle_filter:/home/meric/f1tenth_ws_rl/install/mouse_teleop:/home/meric/f1tenth_ws_rl/install/key_teleop:/home/meric/f1tenth_ws_rl/install/f1tenth_rl:/home/meric/f1tenth_ws_mpc_emergency/install/f1tenth_stack:/home/meric/f1tenth_ws_mpc_emergency/install/joy_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/stanley2_avoidance:/home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/particle_filter:/home/meric/f1tenth_ws_mpc_emergency/install/mouse_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/key_teleop:/home/meric/f1tenth_ws/install/f1tenth_stack:/home/meric/f1tenth_ws/install/joy_teleop:/home/meric/f1tenth_ws/install/stanley2_avoidance:/home/meric/f1tenth_ws/install/simple_teleop:/home/meric/f1tenth_ws/install/particle_filter:/home/meric/f1tenth_ws/install/mouse_teleop:/home/meric/f1tenth_ws/install/key_teleop:/opt/ros/foxy /snap/bin/cmake /home/meric/f1tenth_ws_rl/src/waypoint_generator -DCMAKE_INSTALL_PREFIX=/home/meric/f1tenth_ws_rl/install/waypoint_generator
+[0.286s] 2025/11/14 20:35:25.828018 cmd_run.go:1400: WARNING: cannot create user data directory: failed to verify SELinux context of /home/meric/snap: cannot locate "matchpathcon" executable
+[0.354s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.354s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.354s]   CMake.
+[0.355s] 
+[0.355s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.355s]   to tell CMake that the project requires at least <min> but has been updated
+[0.355s]   to work with policies introduced by <max> or earlier.
+[0.355s] 
+[0.355s] [0m
+[0.603s] -- The C compiler identification is GNU 9.4.0
+[0.945s] -- The CXX compiler identification is GNU 9.4.0
+[0.982s] -- Detecting C compiler ABI info
+[1.357s] -- Detecting C compiler ABI info - done
+[1.405s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.406s] -- Detecting C compile features
+[1.407s] -- Detecting C compile features - done
+[1.476s] -- Detecting CXX compiler ABI info
+[1.841s] -- Detecting CXX compiler ABI info - done
+[1.908s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.909s] -- Detecting CXX compile features
+[1.911s] -- Detecting CXX compile features - done
+[1.960s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[2.034s] [33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+[2.034s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[2.035s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[2.035s]   the cmake_policy command to set the policy and suppress this warning.
+[2.035s] 
+[2.035s] Call Stack (most recent call first):
+[2.035s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+[2.035s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+[2.035s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[2.035s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[2.036s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[2.036s]   CMakeLists.txt:26 (find_package)
+[2.036s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.036s] [0m
+[2.135s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3")
+[2.136s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.208s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[3.535s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.594s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[4.111s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")
+[4.245s] -- Found FastRTPS: /opt/ros/foxy/include
+[4.535s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.754s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[4.764s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.766s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.938s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[4.939s] -- Looking for pthread_create in pthreads
+[5.068s] -- Looking for pthread_create in pthreads - not found
+[5.068s] -- Looking for pthread_create in pthread
+[5.245s] -- Looking for pthread_create in pthread - found
+[5.249s] -- Found Threads: TRUE
+[5.737s] -- Found rclpy: 1.0.13 (/opt/ros/foxy/share/rclpy/cmake)
+[5.753s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[5.842s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[6.002s] -- Found ackermann_msgs: 2.0.2 (/opt/ros/foxy/share/ackermann_msgs/cmake)
+[6.091s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[6.249s] -- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)
+[6.426s] -- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)
+[7.494s] -- Configuring done (7.1s)
+[7.555s] -- Generating done (0.1s)
+[7.565s] -- Build files have been written to: /home/meric/f1tenth_ws_rl/build/waypoint_generator
+[7.609s] Invoked command in '/home/meric/f1tenth_ws_rl/build/waypoint_generator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meric/f1tenth_ws_rl/install/f1tenth_stack:/home/meric/f1tenth_ws_rl/install/joy_teleop:/home/meric/f1tenth_ws_rl/install/stanley2_avoidance:/home/meric/f1tenth_ws_rl/install/simple_teleop:/home/meric/f1tenth_ws_rl/install/particle_filter:/home/meric/f1tenth_ws_rl/install/mouse_teleop:/home/meric/f1tenth_ws_rl/install/key_teleop:/home/meric/f1tenth_ws_rl/install/f1tenth_rl:/home/meric/f1tenth_ws_mpc_emergency/install/f1tenth_stack:/home/meric/f1tenth_ws_mpc_emergency/install/joy_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/stanley2_avoidance:/home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/particle_filter:/home/meric/f1tenth_ws_mpc_emergency/install/mouse_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/key_teleop:/home/meric/f1tenth_ws/install/f1tenth_stack:/home/meric/f1tenth_ws/install/joy_teleop:/home/meric/f1tenth_ws/install/stanley2_avoidance:/home/meric/f1tenth_ws/install/simple_teleop:/home/meric/f1tenth_ws/install/particle_filter:/home/meric/f1tenth_ws/install/mouse_teleop:/home/meric/f1tenth_ws/install/key_teleop:/opt/ros/foxy /snap/bin/cmake /home/meric/f1tenth_ws_rl/src/waypoint_generator -DCMAKE_INSTALL_PREFIX=/home/meric/f1tenth_ws_rl/install/waypoint_generator
+[7.611s] Invoking command in '/home/meric/f1tenth_ws_rl/build/waypoint_generator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meric/f1tenth_ws_rl/install/f1tenth_stack:/home/meric/f1tenth_ws_rl/install/joy_teleop:/home/meric/f1tenth_ws_rl/install/stanley2_avoidance:/home/meric/f1tenth_ws_rl/install/simple_teleop:/home/meric/f1tenth_ws_rl/install/particle_filter:/home/meric/f1tenth_ws_rl/install/mouse_teleop:/home/meric/f1tenth_ws_rl/install/key_teleop:/home/meric/f1tenth_ws_rl/install/f1tenth_rl:/home/meric/f1tenth_ws_mpc_emergency/install/f1tenth_stack:/home/meric/f1tenth_ws_mpc_emergency/install/joy_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/stanley2_avoidance:/home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/particle_filter:/home/meric/f1tenth_ws_mpc_emergency/install/mouse_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/key_teleop:/home/meric/f1tenth_ws/install/f1tenth_stack:/home/meric/f1tenth_ws/install/joy_teleop:/home/meric/f1tenth_ws/install/stanley2_avoidance:/home/meric/f1tenth_ws/install/simple_teleop:/home/meric/f1tenth_ws/install/particle_filter:/home/meric/f1tenth_ws/install/mouse_teleop:/home/meric/f1tenth_ws/install/key_teleop:/opt/ros/foxy /snap/bin/cmake --build /home/meric/f1tenth_ws_rl/build/waypoint_generator -- -j6 -l6
+[7.770s] 2025/11/14 20:35:33.311907 cmd_run.go:1400: WARNING: cannot create user data directory: failed to verify SELinux context of /home/meric/snap: cannot locate "matchpathcon" executable
+[7.873s] [ 25%] [32mBuilding CXX object CMakeFiles/waypoint_generator.dir/src/waypoint_generator.cpp.o[0m
+[7.905s] [ 50%] [32mBuilding CXX object CMakeFiles/waypoint_visualizer.dir/src/waypoint_visualizer.cpp.o[0m
+[20.470s] [ 75%] [1m[32mLinking CXX executable waypoint_visualizer[0m
+[20.829s] [ 75%] Built target waypoint_visualizer
+[23.108s] [100%] [1m[32mLinking CXX executable waypoint_generator[0m
+[23.900s] [100%] Built target waypoint_generator
+[23.930s] Invoked command in '/home/meric/f1tenth_ws_rl/build/waypoint_generator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meric/f1tenth_ws_rl/install/f1tenth_stack:/home/meric/f1tenth_ws_rl/install/joy_teleop:/home/meric/f1tenth_ws_rl/install/stanley2_avoidance:/home/meric/f1tenth_ws_rl/install/simple_teleop:/home/meric/f1tenth_ws_rl/install/particle_filter:/home/meric/f1tenth_ws_rl/install/mouse_teleop:/home/meric/f1tenth_ws_rl/install/key_teleop:/home/meric/f1tenth_ws_rl/install/f1tenth_rl:/home/meric/f1tenth_ws_mpc_emergency/install/f1tenth_stack:/home/meric/f1tenth_ws_mpc_emergency/install/joy_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/stanley2_avoidance:/home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/particle_filter:/home/meric/f1tenth_ws_mpc_emergency/install/mouse_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/key_teleop:/home/meric/f1tenth_ws/install/f1tenth_stack:/home/meric/f1tenth_ws/install/joy_teleop:/home/meric/f1tenth_ws/install/stanley2_avoidance:/home/meric/f1tenth_ws/install/simple_teleop:/home/meric/f1tenth_ws/install/particle_filter:/home/meric/f1tenth_ws/install/mouse_teleop:/home/meric/f1tenth_ws/install/key_teleop:/opt/ros/foxy /snap/bin/cmake --build /home/meric/f1tenth_ws_rl/build/waypoint_generator -- -j6 -l6
+[23.944s] Invoking command in '/home/meric/f1tenth_ws_rl/build/waypoint_generator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meric/f1tenth_ws_rl/install/f1tenth_stack:/home/meric/f1tenth_ws_rl/install/joy_teleop:/home/meric/f1tenth_ws_rl/install/stanley2_avoidance:/home/meric/f1tenth_ws_rl/install/simple_teleop:/home/meric/f1tenth_ws_rl/install/particle_filter:/home/meric/f1tenth_ws_rl/install/mouse_teleop:/home/meric/f1tenth_ws_rl/install/key_teleop:/home/meric/f1tenth_ws_rl/install/f1tenth_rl:/home/meric/f1tenth_ws_mpc_emergency/install/f1tenth_stack:/home/meric/f1tenth_ws_mpc_emergency/install/joy_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/stanley2_avoidance:/home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/particle_filter:/home/meric/f1tenth_ws_mpc_emergency/install/mouse_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/key_teleop:/home/meric/f1tenth_ws/install/f1tenth_stack:/home/meric/f1tenth_ws/install/joy_teleop:/home/meric/f1tenth_ws/install/stanley2_avoidance:/home/meric/f1tenth_ws/install/simple_teleop:/home/meric/f1tenth_ws/install/particle_filter:/home/meric/f1tenth_ws/install/mouse_teleop:/home/meric/f1tenth_ws/install/key_teleop:/opt/ros/foxy /snap/bin/cmake --build /home/meric/f1tenth_ws_rl/build/waypoint_generator --target install -- -j6 -l6
+[24.252s] 2025/11/14 20:35:49.793905 cmd_run.go:1400: WARNING: cannot create user data directory: failed to verify SELinux context of /home/meric/snap: cannot locate "matchpathcon" executable
+[24.488s] [ 50%] Built target waypoint_generator
+[24.510s] [100%] Built target waypoint_visualizer
+[24.555s] [36mInstall the project...[0m
+[24.568s] -- Install configuration: ""
+[24.568s] -- Installing: /home/meric/f1tenth_ws_rl/install/waypoint_generator/lib/waypoint_generator/waypoint_generator
+[24.572s] -- Set non-toolchain portion of runtime path of "/home/meric/f1tenth_ws_rl/install/waypoint_generator/lib/waypoint_generator/waypoint_generator" to ""
+[24.573s] -- Installing: /home/meric/f1tenth_ws_rl/install/waypoint_generator/lib/waypoint_generator/waypoint_visualizer
+[24.574s] -- Set non-toolchain portion of runtime path of "/home/meric/f1tenth_ws_rl/install/waypoint_generator/lib/waypoint_generator/waypoint_visualizer" to ""
+[24.575s] -- Installing: /home/meric/f1tenth_ws_rl/install/waypoint_generator/share/ament_index/resource_index/package_run_dependencies/waypoint_generator
+[24.575s] -- Installing: /home/meric/f1tenth_ws_rl/install/waypoint_generator/share/ament_index/resource_index/parent_prefix_path/waypoint_generator
+[24.575s] -- Installing: /home/meric/f1tenth_ws_rl/install/waypoint_generator/share/waypoint_generator/environment/ament_prefix_path.sh
+[24.576s] -- Installing: /home/meric/f1tenth_ws_rl/install/waypoint_generator/share/waypoint_generator/environment/ament_prefix_path.dsv
+[24.576s] -- Installing: /home/meric/f1tenth_ws_rl/install/waypoint_generator/share/waypoint_generator/environment/path.sh
+[24.576s] -- Installing: /home/meric/f1tenth_ws_rl/install/waypoint_generator/share/waypoint_generator/environment/path.dsv
+[24.576s] -- Installing: /home/meric/f1tenth_ws_rl/install/waypoint_generator/share/waypoint_generator/local_setup.bash
+[24.577s] -- Installing: /home/meric/f1tenth_ws_rl/install/waypoint_generator/share/waypoint_generator/local_setup.sh
+[24.577s] -- Installing: /home/meric/f1tenth_ws_rl/install/waypoint_generator/share/waypoint_generator/local_setup.zsh
+[24.577s] -- Installing: /home/meric/f1tenth_ws_rl/install/waypoint_generator/share/waypoint_generator/local_setup.dsv
+[24.577s] -- Installing: /home/meric/f1tenth_ws_rl/install/waypoint_generator/share/waypoint_generator/package.dsv
+[24.578s] -- Installing: /home/meric/f1tenth_ws_rl/install/waypoint_generator/share/ament_index/resource_index/packages/waypoint_generator
+[24.578s] -- Installing: /home/meric/f1tenth_ws_rl/install/waypoint_generator/share/waypoint_generator/cmake/waypoint_generatorConfig.cmake
+[24.578s] -- Installing: /home/meric/f1tenth_ws_rl/install/waypoint_generator/share/waypoint_generator/cmake/waypoint_generatorConfig-version.cmake
+[24.578s] -- Installing: /home/meric/f1tenth_ws_rl/install/waypoint_generator/share/waypoint_generator/package.xml
+[24.588s] Invoked command in '/home/meric/f1tenth_ws_rl/build/waypoint_generator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meric/f1tenth_ws_rl/install/f1tenth_stack:/home/meric/f1tenth_ws_rl/install/joy_teleop:/home/meric/f1tenth_ws_rl/install/stanley2_avoidance:/home/meric/f1tenth_ws_rl/install/simple_teleop:/home/meric/f1tenth_ws_rl/install/particle_filter:/home/meric/f1tenth_ws_rl/install/mouse_teleop:/home/meric/f1tenth_ws_rl/install/key_teleop:/home/meric/f1tenth_ws_rl/install/f1tenth_rl:/home/meric/f1tenth_ws_mpc_emergency/install/f1tenth_stack:/home/meric/f1tenth_ws_mpc_emergency/install/joy_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/stanley2_avoidance:/home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/particle_filter:/home/meric/f1tenth_ws_mpc_emergency/install/mouse_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/key_teleop:/home/meric/f1tenth_ws/install/f1tenth_stack:/home/meric/f1tenth_ws/install/joy_teleop:/home/meric/f1tenth_ws/install/stanley2_avoidance:/home/meric/f1tenth_ws/install/simple_teleop:/home/meric/f1tenth_ws/install/particle_filter:/home/meric/f1tenth_ws/install/mouse_teleop:/home/meric/f1tenth_ws/install/key_teleop:/opt/ros/foxy /snap/bin/cmake --build /home/meric/f1tenth_ws_rl/build/waypoint_generator --target install -- -j6 -l6

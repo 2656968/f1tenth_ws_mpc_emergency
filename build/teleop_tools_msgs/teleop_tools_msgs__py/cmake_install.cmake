@@ -1,8 +1,8 @@
-# Install script for directory: /home/meric/f1tenth_ws_mpc_emergency/build/teleop_tools_msgs/teleop_tools_msgs__py
+# Install script for directory: /home/meric/f1tenth_ws_rl/build/teleop_tools_msgs/teleop_tools_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/meric/f1tenth_ws_mpc_emergency/install/teleop_tools_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/meric/f1tenth_ws_rl/install/teleop_tools_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -45,6 +45,6 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/meric/f1tenth_ws_mpc_emergency/build/teleop_tools_msgs/teleop_tools_msgs__py/install_local_manifest.txt"
+  file(WRITE "/home/meric/f1tenth_ws_rl/build/teleop_tools_msgs/teleop_tools_msgs__py/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

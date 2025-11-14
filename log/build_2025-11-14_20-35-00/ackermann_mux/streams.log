@@ -1,0 +1,152 @@
+[0.130s] Invoking command in '/home/meric/f1tenth_ws_rl/build/ackermann_mux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meric/f1tenth_ws_rl/install/f1tenth_stack:/home/meric/f1tenth_ws_rl/install/joy_teleop:/home/meric/f1tenth_ws_rl/install/stanley2_avoidance:/home/meric/f1tenth_ws_rl/install/simple_teleop:/home/meric/f1tenth_ws_rl/install/particle_filter:/home/meric/f1tenth_ws_rl/install/mouse_teleop:/home/meric/f1tenth_ws_rl/install/key_teleop:/home/meric/f1tenth_ws_rl/install/f1tenth_rl:/home/meric/f1tenth_ws_mpc_emergency/install/f1tenth_stack:/home/meric/f1tenth_ws_mpc_emergency/install/joy_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/stanley2_avoidance:/home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/particle_filter:/home/meric/f1tenth_ws_mpc_emergency/install/mouse_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/key_teleop:/home/meric/f1tenth_ws/install/f1tenth_stack:/home/meric/f1tenth_ws/install/joy_teleop:/home/meric/f1tenth_ws/install/stanley2_avoidance:/home/meric/f1tenth_ws/install/simple_teleop:/home/meric/f1tenth_ws/install/particle_filter:/home/meric/f1tenth_ws/install/mouse_teleop:/home/meric/f1tenth_ws/install/key_teleop:/opt/ros/foxy /snap/bin/cmake /home/meric/f1tenth_ws_rl/src/f1tenth_system/ackermann_mux -DCMAKE_INSTALL_PREFIX=/home/meric/f1tenth_ws_rl/install/ackermann_mux
+[1.436s] -- The C compiler identification is GNU 9.4.0
+[1.437s] -- The CXX compiler identification is GNU 9.4.0
+[1.437s] -- Detecting C compiler ABI info
+[1.437s] -- Detecting C compiler ABI info - done
+[1.437s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.437s] -- Detecting C compile features
+[1.438s] -- Detecting C compile features - done
+[1.438s] -- Detecting CXX compiler ABI info
+[1.438s] -- Detecting CXX compiler ABI info - done
+[1.438s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.438s] -- Detecting CXX compile features
+[1.439s] -- Detecting CXX compile features - done
+[1.439s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.439s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3")
+[1.439s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.450s] 2025/11/14 20:35:01.190299 cmd_run.go:1400: WARNING: cannot create user data directory: failed to verify SELinux context of /home/meric/snap: cannot locate "matchpathcon" executable
+[1.451s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[1.451s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[1.451s]   CMake.
+[1.451s] 
+[1.451s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[1.451s]   to tell CMake that the project requires at least <min> but has been updated
+[1.451s]   to work with policies introduced by <max> or earlier.
+[1.452s] 
+[1.452s] [0m
+[1.452s] [33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+[1.452s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[1.452s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[1.452s]   the cmake_policy command to set the policy and suppress this warning.
+[1.452s] 
+[1.452s] Call Stack (most recent call first):
+[1.453s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+[1.453s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+[1.453s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[1.453s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[1.453s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[1.453s]   CMakeLists.txt:13 (find_package)
+[1.453s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.454s] [0m
+[1.796s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[2.011s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.050s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.459s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")
+[2.628s] -- Found FastRTPS: /opt/ros/foxy/include
+[2.925s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.156s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[3.165s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.166s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.345s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[3.345s] -- Looking for pthread_create in pthreads
+[3.485s] -- Looking for pthread_create in pthreads - not found
+[3.485s] -- Looking for pthread_create in pthread
+[3.634s] -- Looking for pthread_create in pthread - found
+[3.637s] -- Found Threads: TRUE
+[4.128s] -- Found ackermann_msgs: 2.0.2 (/opt/ros/foxy/share/ackermann_msgs/cmake)
+[4.205s] -- Found diagnostic_updater: 3.1.2 (/opt/ros/foxy/share/diagnostic_updater/cmake)
+[4.362s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[4.767s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[4.769s] [33mCMake Warning (dev) at /opt/ros/foxy/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:45 (find_package):
+[4.769s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[4.769s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[4.769s]   the cmake_policy command to set the policy and suppress this warning.
+[4.770s] 
+[4.770s] Call Stack (most recent call first):
+[4.770s]   /opt/ros/foxy/share/launch_testing_ament_cmake/cmake/launch_testing_ament_cmake-extras.cmake:18 (find_package)
+[4.770s]   /opt/ros/foxy/share/launch_testing_ament_cmake/cmake/launch_testing_ament_cmakeConfig.cmake:41 (include)
+[4.770s]   /opt/ros/foxy/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:36 (find_package)
+[4.770s]   CMakeLists.txt:61 (ament_lint_auto_find_test_dependencies)
+[4.770s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[4.770s] [0m
+[4.854s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5")
+[4.857s] [33mCMake Warning (dev) at /opt/ros/foxy/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:133 (find_package):
+[4.857s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[4.857s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[4.858s]   the cmake_policy command to set the policy and suppress this warning.
+[4.858s] 
+[4.858s] Call Stack (most recent call first):
+[4.858s]   /opt/ros/foxy/share/launch_testing_ament_cmake/cmake/launch_testing_ament_cmake-extras.cmake:18 (find_package)
+[4.858s]   /opt/ros/foxy/share/launch_testing_ament_cmake/cmake/launch_testing_ament_cmakeConfig.cmake:41 (include)
+[4.858s]   /opt/ros/foxy/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:36 (find_package)
+[4.858s]   CMakeLists.txt:61 (ament_lint_auto_find_test_dependencies)
+[4.858s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[4.858s] [0m
+[4.899s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5")
+[4.899s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.899s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[4.899s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so
+[4.976s] -- Found PythonExtra: .so
+[5.044s] -- Added test 'xmllint' to check XML markup files
+[5.054s] -- Added test 'copyright' to check source files copyright and LICENSE
+[5.062s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.063s] -- Configured cppcheck include dirs: /home/meric/f1tenth_ws_rl/src/f1tenth_system/ackermann_mux/include
+[5.063s] -- Configured cppcheck exclude dirs and/or files: 
+[5.079s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[5.079s] -- Configured cpplint exclude dirs and/or files: 
+[5.080s] -- Added test 'flake8' to check Python code syntax and style conventions
+[5.082s] -- Added test 'lint_cmake' to check CMake code style
+[5.087s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[5.094s] -- Added test 'uncrustify' to check C / C++ code style
+[5.095s] -- Configured uncrustify additional arguments: 
+[5.103s] -- Configuring done (4.8s)
+[5.133s] -- Generating done (0.0s)
+[5.141s] -- Build files have been written to: /home/meric/f1tenth_ws_rl/build/ackermann_mux
+[5.192s] Invoked command in '/home/meric/f1tenth_ws_rl/build/ackermann_mux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meric/f1tenth_ws_rl/install/f1tenth_stack:/home/meric/f1tenth_ws_rl/install/joy_teleop:/home/meric/f1tenth_ws_rl/install/stanley2_avoidance:/home/meric/f1tenth_ws_rl/install/simple_teleop:/home/meric/f1tenth_ws_rl/install/particle_filter:/home/meric/f1tenth_ws_rl/install/mouse_teleop:/home/meric/f1tenth_ws_rl/install/key_teleop:/home/meric/f1tenth_ws_rl/install/f1tenth_rl:/home/meric/f1tenth_ws_mpc_emergency/install/f1tenth_stack:/home/meric/f1tenth_ws_mpc_emergency/install/joy_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/stanley2_avoidance:/home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/particle_filter:/home/meric/f1tenth_ws_mpc_emergency/install/mouse_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/key_teleop:/home/meric/f1tenth_ws/install/f1tenth_stack:/home/meric/f1tenth_ws/install/joy_teleop:/home/meric/f1tenth_ws/install/stanley2_avoidance:/home/meric/f1tenth_ws/install/simple_teleop:/home/meric/f1tenth_ws/install/particle_filter:/home/meric/f1tenth_ws/install/mouse_teleop:/home/meric/f1tenth_ws/install/key_teleop:/opt/ros/foxy /snap/bin/cmake /home/meric/f1tenth_ws_rl/src/f1tenth_system/ackermann_mux -DCMAKE_INSTALL_PREFIX=/home/meric/f1tenth_ws_rl/install/ackermann_mux
+[5.194s] Invoking command in '/home/meric/f1tenth_ws_rl/build/ackermann_mux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meric/f1tenth_ws_rl/install/f1tenth_stack:/home/meric/f1tenth_ws_rl/install/joy_teleop:/home/meric/f1tenth_ws_rl/install/stanley2_avoidance:/home/meric/f1tenth_ws_rl/install/simple_teleop:/home/meric/f1tenth_ws_rl/install/particle_filter:/home/meric/f1tenth_ws_rl/install/mouse_teleop:/home/meric/f1tenth_ws_rl/install/key_teleop:/home/meric/f1tenth_ws_rl/install/f1tenth_rl:/home/meric/f1tenth_ws_mpc_emergency/install/f1tenth_stack:/home/meric/f1tenth_ws_mpc_emergency/install/joy_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/stanley2_avoidance:/home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/particle_filter:/home/meric/f1tenth_ws_mpc_emergency/install/mouse_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/key_teleop:/home/meric/f1tenth_ws/install/f1tenth_stack:/home/meric/f1tenth_ws/install/joy_teleop:/home/meric/f1tenth_ws/install/stanley2_avoidance:/home/meric/f1tenth_ws/install/simple_teleop:/home/meric/f1tenth_ws/install/particle_filter:/home/meric/f1tenth_ws/install/mouse_teleop:/home/meric/f1tenth_ws/install/key_teleop:/opt/ros/foxy /snap/bin/cmake --build /home/meric/f1tenth_ws_rl/build/ackermann_mux -- -j6 -l6
+[5.338s] 2025/11/14 20:35:06.276431 cmd_run.go:1400: WARNING: cannot create user data directory: failed to verify SELinux context of /home/meric/snap: cannot locate "matchpathcon" executable
+[5.453s] [ 25%] [32mBuilding CXX object CMakeFiles/ackermann_mux.dir/src/ackermann_mux.cpp.o[0m
+[5.474s] [ 50%] [32mBuilding CXX object CMakeFiles/ackermann_mux.dir/src/ackermann_mux_node.cpp.o[0m
+[5.490s] [ 75%] [32mBuilding CXX object CMakeFiles/ackermann_mux.dir/src/ackermann_mux_diagnostics.cpp.o[0m
+[32.251s] [100%] [1m[32mLinking CXX executable ackermann_mux[0m
+[33.196s] [100%] Built target ackermann_mux
+[33.219s] Invoked command in '/home/meric/f1tenth_ws_rl/build/ackermann_mux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meric/f1tenth_ws_rl/install/f1tenth_stack:/home/meric/f1tenth_ws_rl/install/joy_teleop:/home/meric/f1tenth_ws_rl/install/stanley2_avoidance:/home/meric/f1tenth_ws_rl/install/simple_teleop:/home/meric/f1tenth_ws_rl/install/particle_filter:/home/meric/f1tenth_ws_rl/install/mouse_teleop:/home/meric/f1tenth_ws_rl/install/key_teleop:/home/meric/f1tenth_ws_rl/install/f1tenth_rl:/home/meric/f1tenth_ws_mpc_emergency/install/f1tenth_stack:/home/meric/f1tenth_ws_mpc_emergency/install/joy_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/stanley2_avoidance:/home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/particle_filter:/home/meric/f1tenth_ws_mpc_emergency/install/mouse_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/key_teleop:/home/meric/f1tenth_ws/install/f1tenth_stack:/home/meric/f1tenth_ws/install/joy_teleop:/home/meric/f1tenth_ws/install/stanley2_avoidance:/home/meric/f1tenth_ws/install/simple_teleop:/home/meric/f1tenth_ws/install/particle_filter:/home/meric/f1tenth_ws/install/mouse_teleop:/home/meric/f1tenth_ws/install/key_teleop:/opt/ros/foxy /snap/bin/cmake --build /home/meric/f1tenth_ws_rl/build/ackermann_mux -- -j6 -l6
+[33.221s] Invoking command in '/home/meric/f1tenth_ws_rl/build/ackermann_mux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meric/f1tenth_ws_rl/install/f1tenth_stack:/home/meric/f1tenth_ws_rl/install/joy_teleop:/home/meric/f1tenth_ws_rl/install/stanley2_avoidance:/home/meric/f1tenth_ws_rl/install/simple_teleop:/home/meric/f1tenth_ws_rl/install/particle_filter:/home/meric/f1tenth_ws_rl/install/mouse_teleop:/home/meric/f1tenth_ws_rl/install/key_teleop:/home/meric/f1tenth_ws_rl/install/f1tenth_rl:/home/meric/f1tenth_ws_mpc_emergency/install/f1tenth_stack:/home/meric/f1tenth_ws_mpc_emergency/install/joy_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/stanley2_avoidance:/home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/particle_filter:/home/meric/f1tenth_ws_mpc_emergency/install/mouse_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/key_teleop:/home/meric/f1tenth_ws/install/f1tenth_stack:/home/meric/f1tenth_ws/install/joy_teleop:/home/meric/f1tenth_ws/install/stanley2_avoidance:/home/meric/f1tenth_ws/install/simple_teleop:/home/meric/f1tenth_ws/install/particle_filter:/home/meric/f1tenth_ws/install/mouse_teleop:/home/meric/f1tenth_ws/install/key_teleop:/opt/ros/foxy /snap/bin/cmake --build /home/meric/f1tenth_ws_rl/build/ackermann_mux --target install -- -j6 -l6
+[33.421s] 2025/11/14 20:35:34.358113 cmd_run.go:1400: WARNING: cannot create user data directory: failed to verify SELinux context of /home/meric/snap: cannot locate "matchpathcon" executable
+[33.648s] [100%] Built target ackermann_mux
+[33.663s] [36mInstall the project...[0m
+[33.668s] -- Install configuration: ""
+[33.668s] -- Installing: /home/meric/f1tenth_ws_rl/install/ackermann_mux/lib/ackermann_mux/ackermann_mux
+[33.689s] -- Set non-toolchain portion of runtime path of "/home/meric/f1tenth_ws_rl/install/ackermann_mux/lib/ackermann_mux/ackermann_mux" to ""
+[33.689s] -- Installing: /home/meric/f1tenth_ws_rl/install/ackermann_mux/share/ackermann_mux/launch
+[33.689s] -- Installing: /home/meric/f1tenth_ws_rl/install/ackermann_mux/share/ackermann_mux/launch/ackermann_mux_launch.py
+[33.690s] -- Installing: /home/meric/f1tenth_ws_rl/install/ackermann_mux/share/ackermann_mux/config
+[33.690s] -- Installing: /home/meric/f1tenth_ws_rl/install/ackermann_mux/share/ackermann_mux/config/joystick.yaml
+[33.690s] -- Installing: /home/meric/f1tenth_ws_rl/install/ackermann_mux/share/ackermann_mux/config/ackermann_mux_topics.yaml
+[33.693s] -- Installing: /home/meric/f1tenth_ws_rl/install/ackermann_mux/share/ackermann_mux/config/ackermann_mux_locks.yaml
+[33.693s] -- Installing: /home/meric/f1tenth_ws_rl/install/ackermann_mux/include
+[33.694s] -- Installing: /home/meric/f1tenth_ws_rl/install/ackermann_mux/include/ackermann_mux
+[33.694s] -- Installing: /home/meric/f1tenth_ws_rl/install/ackermann_mux/include/ackermann_mux/ackermann_mux_diagnostics_status.hpp
+[33.694s] -- Installing: /home/meric/f1tenth_ws_rl/install/ackermann_mux/include/ackermann_mux/params_helpers.hpp
+[33.694s] -- Installing: /home/meric/f1tenth_ws_rl/install/ackermann_mux/include/ackermann_mux/ackermann_mux.hpp
+[33.694s] -- Installing: /home/meric/f1tenth_ws_rl/install/ackermann_mux/include/ackermann_mux/ackermann_mux_diagnostics.hpp
+[33.695s] -- Installing: /home/meric/f1tenth_ws_rl/install/ackermann_mux/include/ackermann_mux/utils.hpp
+[33.695s] -- Installing: /home/meric/f1tenth_ws_rl/install/ackermann_mux/include/ackermann_mux/topic_handle.hpp
+[33.695s] -- Installing: /home/meric/f1tenth_ws_rl/install/ackermann_mux/share/ament_index/resource_index/package_run_dependencies/ackermann_mux
+[33.695s] -- Installing: /home/meric/f1tenth_ws_rl/install/ackermann_mux/share/ament_index/resource_index/parent_prefix_path/ackermann_mux
+[33.696s] -- Installing: /home/meric/f1tenth_ws_rl/install/ackermann_mux/share/ackermann_mux/environment/ament_prefix_path.sh
+[33.696s] -- Installing: /home/meric/f1tenth_ws_rl/install/ackermann_mux/share/ackermann_mux/environment/ament_prefix_path.dsv
+[33.696s] -- Installing: /home/meric/f1tenth_ws_rl/install/ackermann_mux/share/ackermann_mux/environment/path.sh
+[33.696s] -- Installing: /home/meric/f1tenth_ws_rl/install/ackermann_mux/share/ackermann_mux/environment/path.dsv
+[33.697s] -- Installing: /home/meric/f1tenth_ws_rl/install/ackermann_mux/share/ackermann_mux/local_setup.bash
+[33.697s] -- Installing: /home/meric/f1tenth_ws_rl/install/ackermann_mux/share/ackermann_mux/local_setup.sh
+[33.698s] -- Installing: /home/meric/f1tenth_ws_rl/install/ackermann_mux/share/ackermann_mux/local_setup.zsh
+[33.699s] -- Installing: /home/meric/f1tenth_ws_rl/install/ackermann_mux/share/ackermann_mux/local_setup.dsv
+[33.700s] -- Installing: /home/meric/f1tenth_ws_rl/install/ackermann_mux/share/ackermann_mux/package.dsv
+[33.700s] -- Installing: /home/meric/f1tenth_ws_rl/install/ackermann_mux/share/ament_index/resource_index/packages/ackermann_mux
+[33.700s] -- Installing: /home/meric/f1tenth_ws_rl/install/ackermann_mux/share/ackermann_mux/cmake/ament_cmake_export_include_directories-extras.cmake
+[33.700s] -- Installing: /home/meric/f1tenth_ws_rl/install/ackermann_mux/share/ackermann_mux/cmake/ament_cmake_export_dependencies-extras.cmake
+[33.701s] -- Installing: /home/meric/f1tenth_ws_rl/install/ackermann_mux/share/ackermann_mux/cmake/ackermann_muxConfig.cmake
+[33.701s] -- Installing: /home/meric/f1tenth_ws_rl/install/ackermann_mux/share/ackermann_mux/cmake/ackermann_muxConfig-version.cmake
+[33.701s] -- Installing: /home/meric/f1tenth_ws_rl/install/ackermann_mux/share/ackermann_mux/package.xml
+[33.709s] Invoked command in '/home/meric/f1tenth_ws_rl/build/ackermann_mux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meric/f1tenth_ws_rl/install/f1tenth_stack:/home/meric/f1tenth_ws_rl/install/joy_teleop:/home/meric/f1tenth_ws_rl/install/stanley2_avoidance:/home/meric/f1tenth_ws_rl/install/simple_teleop:/home/meric/f1tenth_ws_rl/install/particle_filter:/home/meric/f1tenth_ws_rl/install/mouse_teleop:/home/meric/f1tenth_ws_rl/install/key_teleop:/home/meric/f1tenth_ws_rl/install/f1tenth_rl:/home/meric/f1tenth_ws_mpc_emergency/install/f1tenth_stack:/home/meric/f1tenth_ws_mpc_emergency/install/joy_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/stanley2_avoidance:/home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/particle_filter:/home/meric/f1tenth_ws_mpc_emergency/install/mouse_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/key_teleop:/home/meric/f1tenth_ws/install/f1tenth_stack:/home/meric/f1tenth_ws/install/joy_teleop:/home/meric/f1tenth_ws/install/stanley2_avoidance:/home/meric/f1tenth_ws/install/simple_teleop:/home/meric/f1tenth_ws/install/particle_filter:/home/meric/f1tenth_ws/install/mouse_teleop:/home/meric/f1tenth_ws/install/key_teleop:/opt/ros/foxy /snap/bin/cmake --build /home/meric/f1tenth_ws_rl/build/ackermann_mux --target install -- -j6 -l6

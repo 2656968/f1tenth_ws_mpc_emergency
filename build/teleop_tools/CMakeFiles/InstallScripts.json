@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/home/meric/f1tenth_ws_mpc_emergency/build/teleop_tools/cmake_install.cmake"
+		"/home/meric/f1tenth_ws_rl/build/teleop_tools/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

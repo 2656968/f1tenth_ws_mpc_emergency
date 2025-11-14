@@ -1,0 +1,26 @@
+[1.729s] Invoking command in '/home/meric/f1tenth_ws_rl/src/f1tenth_rl': PYTHONPATH=/home/meric/f1tenth_ws_rl/build/f1tenth_rl/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/meric/f1tenth_ws_rl/install/f1tenth_rl/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/f1tenth_rl build --build-base /home/meric/f1tenth_ws_rl/build/f1tenth_rl/build install --record /home/meric/f1tenth_ws_rl/build/f1tenth_rl/install.log --install-scripts $base/lib/f1tenth_rl --single-version-externally-managed install_data
+[2.326s] running egg_info
+[2.327s] writing ../../build/f1tenth_rl/f1tenth_rl.egg-info/PKG-INFO
+[2.327s] writing dependency_links to ../../build/f1tenth_rl/f1tenth_rl.egg-info/dependency_links.txt
+[2.328s] writing entry points to ../../build/f1tenth_rl/f1tenth_rl.egg-info/entry_points.txt
+[2.328s] writing requirements to ../../build/f1tenth_rl/f1tenth_rl.egg-info/requires.txt
+[2.328s] writing top-level names to ../../build/f1tenth_rl/f1tenth_rl.egg-info/top_level.txt
+[2.402s] reading manifest file '../../build/f1tenth_rl/f1tenth_rl.egg-info/SOURCES.txt'
+[2.404s] writing manifest file '../../build/f1tenth_rl/f1tenth_rl.egg-info/SOURCES.txt'
+[2.404s] running build
+[2.405s] running build_py
+[2.405s] copying f1tenth_rl/rl_agent_node.py -> /home/meric/f1tenth_ws_rl/build/f1tenth_rl/build/lib/f1tenth_rl
+[2.406s] running install
+[2.409s] running install_lib
+[2.412s] copying /home/meric/f1tenth_ws_rl/build/f1tenth_rl/build/lib/f1tenth_rl/rl_agent_node.py -> /home/meric/f1tenth_ws_rl/install/f1tenth_rl/lib/python3.8/site-packages/f1tenth_rl
+[2.414s] byte-compiling /home/meric/f1tenth_ws_rl/install/f1tenth_rl/lib/python3.8/site-packages/f1tenth_rl/rl_agent_node.py to rl_agent_node.cpython-38.pyc
+[2.419s] running install_data
+[2.419s] running install_egg_info
+[2.424s] removing '/home/meric/f1tenth_ws_rl/install/f1tenth_rl/lib/python3.8/site-packages/f1tenth_rl-0.1.0-py3.8.egg-info' (and everything under it)
+[2.425s] Copying ../../build/f1tenth_rl/f1tenth_rl.egg-info to /home/meric/f1tenth_ws_rl/install/f1tenth_rl/lib/python3.8/site-packages/f1tenth_rl-0.1.0-py3.8.egg-info
+[2.427s] running install_scripts
+[2.476s] Installing eval_rl_agent script to /home/meric/f1tenth_ws_rl/install/f1tenth_rl/lib/f1tenth_rl
+[2.477s] Installing rl_agent script to /home/meric/f1tenth_ws_rl/install/f1tenth_rl/lib/f1tenth_rl
+[2.477s] Installing train_rl_agent script to /home/meric/f1tenth_ws_rl/install/f1tenth_rl/lib/f1tenth_rl
+[2.477s] writing list of installed files to '/home/meric/f1tenth_ws_rl/build/f1tenth_rl/install.log'
+[2.550s] Invoked command in '/home/meric/f1tenth_ws_rl/src/f1tenth_rl' returned '0': PYTHONPATH=/home/meric/f1tenth_ws_rl/build/f1tenth_rl/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/meric/f1tenth_ws_rl/install/f1tenth_rl/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/f1tenth_rl build --build-base /home/meric/f1tenth_ws_rl/build/f1tenth_rl/build install --record /home/meric/f1tenth_ws_rl/build/f1tenth_rl/install.log --install-scripts $base/lib/f1tenth_rl --single-version-externally-managed install_data

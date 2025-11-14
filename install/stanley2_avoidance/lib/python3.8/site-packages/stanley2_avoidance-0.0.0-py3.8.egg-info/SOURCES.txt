@@ -16,5 +16,6 @@ launch/sim_stanley_avoidance_launch.py
 launch/stanley2_avoidance_launch.py
 launch/stanley_avoidance.rviz
 resource/stanley2_avoidance
+stanley2_avoidance/1stanley2_avoidance.py
 stanley2_avoidance/__init__.py
 stanley2_avoidance/stanley2_avoidance.py

@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/home/meric/f1tenth_ws_mpc_emergency/build/waypoint_generator/cmake_install.cmake"
+		"/home/meric/f1tenth_ws_rl/build/waypoint_generator/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

@@ -1,4 +1,0 @@
-Invoking command in '/home/meric/f1tenth_ws_mpc_emergency/build/ackermann_mux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /snap/bin/cmake --build /home/meric/f1tenth_ws_mpc_emergency/build/ackermann_mux -- -j6 -l6
-Invoked command in '/home/meric/f1tenth_ws_mpc_emergency/build/ackermann_mux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /snap/bin/cmake --build /home/meric/f1tenth_ws_mpc_emergency/build/ackermann_mux -- -j6 -l6
-Invoking command in '/home/meric/f1tenth_ws_mpc_emergency/build/ackermann_mux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /snap/bin/cmake --build /home/meric/f1tenth_ws_mpc_emergency/build/ackermann_mux --target install -- -j6 -l6
-Invoked command in '/home/meric/f1tenth_ws_mpc_emergency/build/ackermann_mux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /snap/bin/cmake --build /home/meric/f1tenth_ws_mpc_emergency/build/ackermann_mux --target install -- -j6 -l6

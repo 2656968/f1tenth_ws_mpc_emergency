@@ -1,4 +1,4 @@
 import sys
 if sys.prefix == '/usr':
     sys.real_prefix = sys.prefix
-    sys.prefix = sys.exec_prefix = '/home/meric/f1tenth_ws_mpc_emergency/install/mouse_teleop'
+    sys.prefix = sys.exec_prefix = '/home/meric/f1tenth_ws_rl/install/mouse_teleop'

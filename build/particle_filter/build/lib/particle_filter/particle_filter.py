@@ -244,10 +244,10 @@ class ParticleFiler(Node):
         # header
         t.header.stamp = stamp
         t.header.frame_id = '/map'
-        t.child_frame_id = '/laser'
+        t.child_frame_id = '/base_link'
         # translation
-        t.transform.translation.x = pose[0]
-        t.transform.translation.y = pose[1]
+        t.transform.translation.x = pose[0] - 0.27 * np.cos(pose[2])
+        t.transform.translation.y = pose[1] - 0.27 * np.cos(pose[2])
         t.transform.translation.z = 0.0
         q = tf_transformations.quaternion_from_euler(0., 0., pose[2])
         # rotation
@@ -335,20 +335,12 @@ class ParticleFiler(Node):
             self.get_logger().info('...Received first LiDAR message')
             self.laser_angles = np.linspace(msg.angle_min, msg.angle_max, len(msg.ranges))
             self.downsampled_angles = np.copy(self.laser_angles[0::self.ANGLE_STEP]).astype(np.float32)
-
-            # 우측 45도 필터링: -45도 ~ 45도 범위 제거  
-            mask = (self.downsampled_angles < -np.radians(45)) | (self.downsampled_angles > np.radians(45))  
-            self.downsampled_angles = self.downsampled_angles[mask]  
-            
             self.viz_queries = np.zeros((self.downsampled_angles.shape[0],3), dtype=np.float32)
             self.viz_ranges = np.zeros(self.downsampled_angles.shape[0], dtype=np.float32)
             self.get_logger().info(str(self.downsampled_angles.shape[0]))
 
         # store the necessary scanner information for later processing
-        # 동일한 마스크를 ranges에도 적용  
-        downsampled_ranges = np.array(msg.ranges[::self.ANGLE_STEP])  
-        mask = (self.laser_angles[::self.ANGLE_STEP] < -np.radians(45)) | (self.laser_angles[::self.ANGLE_STEP] > np.radians(45))  
-        self.downsampled_ranges = downsampled_ranges[mask]  
+        self.downsampled_ranges = np.array(msg.ranges[::self.ANGLE_STEP])
         self.lidar_initialized = True
         # self.update()
 
@@ -672,6 +664,8 @@ class ParticleFiler(Node):
                 observation = np.copy(self.downsampled_ranges).astype(np.float32)
                 action = np.copy(self.odometry_data)
                 self.odometry_data = np.zeros(3)
+
+    
 
                 # run the MCL update algorithm
                 self.MCL(action, observation)

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\"teleop_tools_msgs\" -Dteleop_tools_msgs__rosidl_typesupport_introspection_cpp_EXPORTS
 
-CXX_INCLUDES = -I/home/meric/f1tenth_ws_mpc_emergency/build/teleop_tools_msgs/rosidl_generator_cpp -isystem /opt/ros/foxy/include
+CXX_INCLUDES = -I/home/meric/f1tenth_ws_rl/build/teleop_tools_msgs/rosidl_generator_cpp -isystem /opt/ros/foxy/include
 
 CXX_FLAGS = -std=gnu++14 -fPIC -Wall
 

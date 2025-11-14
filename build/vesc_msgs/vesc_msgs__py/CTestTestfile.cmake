@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/meric/f1tenth_ws_mpc_emergency/build/vesc_msgs/vesc_msgs__py
-# Build directory: /home/meric/f1tenth_ws_mpc_emergency/build/vesc_msgs/vesc_msgs__py
+# Source directory: /home/meric/f1tenth_ws_rl/build/vesc_msgs/vesc_msgs__py
+# Build directory: /home/meric/f1tenth_ws_rl/build/vesc_msgs/vesc_msgs__py
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

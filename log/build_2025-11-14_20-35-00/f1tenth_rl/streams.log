@@ -1,0 +1,65 @@
+[3.108s] Invoking command in '/home/meric/f1tenth_ws_rl/src/f1tenth_rl': PYTHONPATH=/home/meric/f1tenth_ws_rl/build/f1tenth_rl/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/meric/f1tenth_ws_rl/install/f1tenth_rl/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/f1tenth_rl build --build-base /home/meric/f1tenth_ws_rl/build/f1tenth_rl/build install --record /home/meric/f1tenth_ws_rl/build/f1tenth_rl/install.log --install-scripts $base/lib/f1tenth_rl --single-version-externally-managed install_data
+[3.805s] running egg_info
+[3.805s] creating ../../build/f1tenth_rl/f1tenth_rl.egg-info
+[3.805s] writing ../../build/f1tenth_rl/f1tenth_rl.egg-info/PKG-INFO
+[3.805s] writing dependency_links to ../../build/f1tenth_rl/f1tenth_rl.egg-info/dependency_links.txt
+[3.805s] writing entry points to ../../build/f1tenth_rl/f1tenth_rl.egg-info/entry_points.txt
+[3.805s] writing requirements to ../../build/f1tenth_rl/f1tenth_rl.egg-info/requires.txt
+[3.805s] writing top-level names to ../../build/f1tenth_rl/f1tenth_rl.egg-info/top_level.txt
+[3.806s] writing manifest file '../../build/f1tenth_rl/f1tenth_rl.egg-info/SOURCES.txt'
+[3.823s] reading manifest file '../../build/f1tenth_rl/f1tenth_rl.egg-info/SOURCES.txt'
+[3.825s] writing manifest file '../../build/f1tenth_rl/f1tenth_rl.egg-info/SOURCES.txt'
+[3.825s] running build
+[3.825s] running build_py
+[3.825s] creating /home/meric/f1tenth_ws_rl/build/f1tenth_rl/build
+[3.826s] creating /home/meric/f1tenth_ws_rl/build/f1tenth_rl/build/lib
+[3.826s] creating /home/meric/f1tenth_ws_rl/build/f1tenth_rl/build/lib/f1tenth_rl
+[3.826s] copying f1tenth_rl/environment.py -> /home/meric/f1tenth_ws_rl/build/f1tenth_rl/build/lib/f1tenth_rl
+[3.826s] copying f1tenth_rl/__init__.py -> /home/meric/f1tenth_ws_rl/build/f1tenth_rl/build/lib/f1tenth_rl
+[3.826s] copying f1tenth_rl/rl_agent_node.py -> /home/meric/f1tenth_ws_rl/build/f1tenth_rl/build/lib/f1tenth_rl
+[3.827s] creating /home/meric/f1tenth_ws_rl/build/f1tenth_rl/build/lib/f1tenth_rl/models
+[3.827s] copying f1tenth_rl/models/dqn.py -> /home/meric/f1tenth_ws_rl/build/f1tenth_rl/build/lib/f1tenth_rl/models
+[3.827s] copying f1tenth_rl/models/__init__.py -> /home/meric/f1tenth_ws_rl/build/f1tenth_rl/build/lib/f1tenth_rl/models
+[3.828s] copying f1tenth_rl/models/ppo.py -> /home/meric/f1tenth_ws_rl/build/f1tenth_rl/build/lib/f1tenth_rl/models
+[3.828s] creating /home/meric/f1tenth_ws_rl/build/f1tenth_rl/build/lib/f1tenth_rl/utils
+[3.829s] copying f1tenth_rl/utils/rewards.py -> /home/meric/f1tenth_ws_rl/build/f1tenth_rl/build/lib/f1tenth_rl/utils
+[3.829s] copying f1tenth_rl/utils/__init__.py -> /home/meric/f1tenth_ws_rl/build/f1tenth_rl/build/lib/f1tenth_rl/utils
+[3.831s] running install
+[3.837s] running install_lib
+[3.837s] creating /home/meric/f1tenth_ws_rl/install/f1tenth_rl/lib/python3.8/site-packages/f1tenth_rl
+[3.837s] creating /home/meric/f1tenth_ws_rl/install/f1tenth_rl/lib/python3.8/site-packages/f1tenth_rl/models
+[3.838s] copying /home/meric/f1tenth_ws_rl/build/f1tenth_rl/build/lib/f1tenth_rl/models/dqn.py -> /home/meric/f1tenth_ws_rl/install/f1tenth_rl/lib/python3.8/site-packages/f1tenth_rl/models
+[3.838s] copying /home/meric/f1tenth_ws_rl/build/f1tenth_rl/build/lib/f1tenth_rl/models/__init__.py -> /home/meric/f1tenth_ws_rl/install/f1tenth_rl/lib/python3.8/site-packages/f1tenth_rl/models
+[3.839s] copying /home/meric/f1tenth_ws_rl/build/f1tenth_rl/build/lib/f1tenth_rl/models/ppo.py -> /home/meric/f1tenth_ws_rl/install/f1tenth_rl/lib/python3.8/site-packages/f1tenth_rl/models
+[3.840s] creating /home/meric/f1tenth_ws_rl/install/f1tenth_rl/lib/python3.8/site-packages/f1tenth_rl/utils
+[3.841s] copying /home/meric/f1tenth_ws_rl/build/f1tenth_rl/build/lib/f1tenth_rl/utils/rewards.py -> /home/meric/f1tenth_ws_rl/install/f1tenth_rl/lib/python3.8/site-packages/f1tenth_rl/utils
+[3.843s] copying /home/meric/f1tenth_ws_rl/build/f1tenth_rl/build/lib/f1tenth_rl/utils/__init__.py -> /home/meric/f1tenth_ws_rl/install/f1tenth_rl/lib/python3.8/site-packages/f1tenth_rl/utils
+[3.843s] copying /home/meric/f1tenth_ws_rl/build/f1tenth_rl/build/lib/f1tenth_rl/environment.py -> /home/meric/f1tenth_ws_rl/install/f1tenth_rl/lib/python3.8/site-packages/f1tenth_rl
+[3.843s] copying /home/meric/f1tenth_ws_rl/build/f1tenth_rl/build/lib/f1tenth_rl/__init__.py -> /home/meric/f1tenth_ws_rl/install/f1tenth_rl/lib/python3.8/site-packages/f1tenth_rl
+[3.844s] copying /home/meric/f1tenth_ws_rl/build/f1tenth_rl/build/lib/f1tenth_rl/rl_agent_node.py -> /home/meric/f1tenth_ws_rl/install/f1tenth_rl/lib/python3.8/site-packages/f1tenth_rl
+[3.844s] byte-compiling /home/meric/f1tenth_ws_rl/install/f1tenth_rl/lib/python3.8/site-packages/f1tenth_rl/models/dqn.py to dqn.cpython-38.pyc
+[3.844s] byte-compiling /home/meric/f1tenth_ws_rl/install/f1tenth_rl/lib/python3.8/site-packages/f1tenth_rl/models/__init__.py to __init__.cpython-38.pyc
+[3.844s] byte-compiling /home/meric/f1tenth_ws_rl/install/f1tenth_rl/lib/python3.8/site-packages/f1tenth_rl/models/ppo.py to ppo.cpython-38.pyc
+[3.850s] byte-compiling /home/meric/f1tenth_ws_rl/install/f1tenth_rl/lib/python3.8/site-packages/f1tenth_rl/utils/rewards.py to rewards.cpython-38.pyc
+[3.850s] byte-compiling /home/meric/f1tenth_ws_rl/install/f1tenth_rl/lib/python3.8/site-packages/f1tenth_rl/utils/__init__.py to __init__.cpython-38.pyc
+[3.850s] byte-compiling /home/meric/f1tenth_ws_rl/install/f1tenth_rl/lib/python3.8/site-packages/f1tenth_rl/environment.py to environment.cpython-38.pyc
+[3.850s] byte-compiling /home/meric/f1tenth_ws_rl/install/f1tenth_rl/lib/python3.8/site-packages/f1tenth_rl/__init__.py to __init__.cpython-38.pyc
+[3.851s] byte-compiling /home/meric/f1tenth_ws_rl/install/f1tenth_rl/lib/python3.8/site-packages/f1tenth_rl/rl_agent_node.py to rl_agent_node.cpython-38.pyc
+[3.851s] running install_data
+[3.853s] creating /home/meric/f1tenth_ws_rl/install/f1tenth_rl/share/ament_index
+[3.853s] creating /home/meric/f1tenth_ws_rl/install/f1tenth_rl/share/ament_index/resource_index
+[3.854s] creating /home/meric/f1tenth_ws_rl/install/f1tenth_rl/share/ament_index/resource_index/packages
+[3.854s] copying resource/f1tenth_rl -> /home/meric/f1tenth_ws_rl/install/f1tenth_rl/share/ament_index/resource_index/packages
+[3.854s] copying package.xml -> /home/meric/f1tenth_ws_rl/install/f1tenth_rl/share/f1tenth_rl
+[3.854s] creating /home/meric/f1tenth_ws_rl/install/f1tenth_rl/share/f1tenth_rl/launch
+[3.854s] copying launch/rl_agent_launch.py -> /home/meric/f1tenth_ws_rl/install/f1tenth_rl/share/f1tenth_rl/launch
+[3.855s] creating /home/meric/f1tenth_ws_rl/install/f1tenth_rl/share/f1tenth_rl/config
+[3.855s] copying config/agent_params.yaml -> /home/meric/f1tenth_ws_rl/install/f1tenth_rl/share/f1tenth_rl/config
+[3.855s] running install_egg_info
+[3.861s] Copying ../../build/f1tenth_rl/f1tenth_rl.egg-info to /home/meric/f1tenth_ws_rl/install/f1tenth_rl/lib/python3.8/site-packages/f1tenth_rl-0.1.0-py3.8.egg-info
+[3.862s] running install_scripts
+[3.914s] Installing eval_rl_agent script to /home/meric/f1tenth_ws_rl/install/f1tenth_rl/lib/f1tenth_rl
+[3.915s] Installing rl_agent script to /home/meric/f1tenth_ws_rl/install/f1tenth_rl/lib/f1tenth_rl
+[3.915s] Installing train_rl_agent script to /home/meric/f1tenth_ws_rl/install/f1tenth_rl/lib/f1tenth_rl
+[3.916s] writing list of installed files to '/home/meric/f1tenth_ws_rl/build/f1tenth_rl/install.log'
+[4.560s] Invoked command in '/home/meric/f1tenth_ws_rl/src/f1tenth_rl' returned '0': PYTHONPATH=/home/meric/f1tenth_ws_rl/build/f1tenth_rl/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/meric/f1tenth_ws_rl/install/f1tenth_rl/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/f1tenth_rl build --build-base /home/meric/f1tenth_ws_rl/build/f1tenth_rl/build install --record /home/meric/f1tenth_ws_rl/build/f1tenth_rl/install.log --install-scripts $base/lib/f1tenth_rl --single-version-externally-managed install_data

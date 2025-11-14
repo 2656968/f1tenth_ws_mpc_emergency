@@ -1,0 +1,146 @@
+ii  ros-foxy-ackermann-msgs                         2.0.2-1focal.20230527.061324         arm64        ROS2 messages for robots using Ackermann steering.
+ii  ros-foxy-action-msgs                            1.0.0-1focal.20230527.061324         arm64        Messages and service definitions common among all ROS actions.
+ii  ros-foxy-ament-cmake                            0.9.12-1focal.20230527.034003        arm64        The entry point package for the ament buildsystem in CMake.
+ii  ros-foxy-ament-cmake-auto                       0.9.12-1focal.20230527.034115        arm64        The auto-magic functions for ease to use of the ament buildsystem in CMake.
+ii  ros-foxy-ament-cmake-copyright                  0.9.8-1focal.20230527.040734         arm64        The CMake API for ament_copyright to check every source file contains copyright reference.
+ii  ros-foxy-ament-cmake-core                       0.9.12-1focal.20230527.032629        arm64        The core of the ament buildsystem in CMake.
+ii  ros-foxy-ament-cmake-cppcheck                   0.9.8-1focal.20230527.041005         arm64        The CMake API for ament_cppcheck to perform static code analysis on C/C++ code using Cppcheck.
+ii  ros-foxy-ament-cmake-cpplint                    0.9.8-1focal.20230527.044538         arm64        The CMake API for ament_cpplint to lint C / C++ code using cpplint.
+ii  ros-foxy-ament-cmake-export-definitions         0.9.12-1focal.20230527.033821        arm64        The ability to export definitions to downstream packages in the ament buildsystem.
+ii  ros-foxy-ament-cmake-export-dependencies        0.9.12-1focal.20230527.033904        arm64        The ability to export dependencies to downstream packages in the ament buildsystem in CMake.
+ii  ros-foxy-ament-cmake-export-include-directories 0.9.12-1focal.20230527.033816        arm64        The ability to export include directories to downstream packages in the ament buildsystem in CMake.
+ii  ros-foxy-ament-cmake-export-interfaces          0.9.12-1focal.20230527.033600        arm64        The ability to export interfaces to downstream packages in the ament buildsystem in CMake.
+ii  ros-foxy-ament-cmake-export-libraries           0.9.12-1focal.20230527.033536        arm64        The ability to export libraries to downstream packages in the ament buildsystem in CMake.
+ii  ros-foxy-ament-cmake-export-link-flags          0.9.12-1focal.20230527.033819        arm64        The ability to export link flags to downstream packages in the ament buildsystem.
+ii  ros-foxy-ament-cmake-export-targets             0.9.12-1focal.20230527.033602        arm64        The ability to export targets to downstream packages in the ament buildsystem in CMake.
+ii  ros-foxy-ament-cmake-flake8                     0.9.8-1focal.20230527.041059         arm64        The CMake API for ament_flake8 to check code syntax and style conventions with flake8.
+ii  ros-foxy-ament-cmake-gmock                      0.9.12-1focal.20230527.040917        arm64        The ability to add Google mock-based tests in the ament buildsystem in CMake.
+ii  ros-foxy-ament-cmake-gtest                      0.9.12-1focal.20230527.040644        arm64        The ability to add gtest-based tests in the ament buildsystem in CMake.
+ii  ros-foxy-ament-cmake-include-directories        0.9.12-1focal.20230527.033849        arm64        The functionality to order include directories according to a chain of prefixes in the ament buildsystem in CMake.
+ii  ros-foxy-ament-cmake-libraries                  0.9.12-1focal.20230527.033841        arm64        The functionality to deduplicate libraries in the ament buildsystem in CMake.
+ii  ros-foxy-ament-cmake-lint-cmake                 0.9.8-1focal.20230527.040626         arm64        The CMake API for ament_lint_cmake to lint CMake code using cmakelint.
+ii  ros-foxy-ament-cmake-pep257                     0.9.8-1focal.20230527.041105         arm64        The CMake API for ament_pep257 to check code against the style conventions in PEP 257.
+ii  ros-foxy-ament-cmake-pytest                     0.9.12-1focal.20230527.043854        arm64        The ability to run Python tests using pytest in the ament buildsystem in CMake.
+ii  ros-foxy-ament-cmake-python                     0.9.12-1focal.20230527.033817        arm64        The ability to use Python in the ament buildsystem in CMake.
+ii  ros-foxy-ament-cmake-ros                        0.9.2-1focal.20230527.045739         arm64        The ROS specific CMake bits in the ament buildsystem.
+ii  ros-foxy-ament-cmake-target-dependencies        0.9.12-1focal.20230527.033914        arm64        The ability to add definitions, include directories and libraries of a package to a target in the ament buildsystem in CMake.
+ii  ros-foxy-ament-cmake-test                       0.9.12-1focal.20230527.033843        arm64        The ability to add tests in the ament buildsystem in CMake.
+ii  ros-foxy-ament-cmake-uncrustify                 0.9.8-1focal.20230527.040848         arm64        The CMake API for ament_uncrustify to check code against styleconventions using uncrustify.
+ii  ros-foxy-ament-cmake-version                    0.9.12-1focal.20230527.033844        arm64        The ability to override the exported package version in the ament buildsystem.
+ii  ros-foxy-ament-cmake-xmllint                    0.9.8-1focal.20230527.041123         arm64        The CMake API for ament_xmllint to check XML file using xmmlint.
+ii  ros-foxy-ament-copyright                        0.9.8-1focal.20230527.040308         arm64        The ability to check source files for copyright and license information.
+ii  ros-foxy-ament-cppcheck                         0.9.8-1focal.20230527.033907         arm64        The ability to perform static code analysis on C/C++ code using Cppcheck and generate xUnit test result files.
+ii  ros-foxy-ament-cpplint                          0.9.8-1focal.20230527.044409         arm64        The ability to check code against the Google style conventions using cpplint and generate xUnit test result files.
+ii  ros-foxy-ament-flake8                           0.9.8-1focal.20230527.034018         arm64        The ability to check code for style and syntax conventions with flake8.
+ii  ros-foxy-ament-index-cpp                        1.1.0-1focal.20230527.044824         arm64        C++ API to access the ament resource index.
+ii  ros-foxy-ament-index-python                     1.1.0-1focal.20230527.040511         arm64        Python API to access the ament resource index.
+ii  ros-foxy-ament-lint                             0.9.8-1focal.20230527.033909         arm64        Providing common API for ament linter packages.
+ii  ros-foxy-ament-lint-auto                        0.9.8-1focal.20230527.034012         arm64        The auto-magic functions for ease to use of the ament linters in CMake.
+ii  ros-foxy-ament-lint-cmake                       0.9.8-1focal.20230527.040514         arm64        The ability to lint CMake code using cmakelint and generate xUnit test result files.
+ii  ros-foxy-ament-lint-common                      0.9.8-1focal.20230527.044618         arm64        The list of commonly used linters in the ament buildsytem in CMake.
+ii  ros-foxy-ament-package                          0.9.5-1focal.20210422.231141         arm64        The parser for the manifest files in the ament buildsystem.
+ii  ros-foxy-ament-pep257                           0.9.8-1focal.20230527.040159         arm64        The ability to check code against the style conventions in PEP 8 and generate xUnit test result files.
+ii  ros-foxy-ament-uncrustify                       0.9.8-1focal.20230527.034242         arm64        The ability to check code against style conventions using uncrustify and generate xUnit test result files.
+ii  ros-foxy-ament-xmllint                          0.9.8-1focal.20230527.040536         arm64        The ability to check XML files like the package manifest using xmllint and generate xUnit test result files.
+ii  ros-foxy-angles                                 1.12.6-1focal.20230527.034611        arm64        This package provides a set of simple math utilities to work with angles.
+ii  ros-foxy-builtin-interfaces                     1.0.0-1focal.20230527.052241         arm64        A package containing message and service definitions for types defined in the OMG IDL Platform Specific Model.
+ii  ros-foxy-cartographer                           1.0.9001-1focal.20230527.033501      arm64        Cartographer is a system that provides real-time simultaneous localization and mapping (SLAM) in 2D and 3D across multiple platforms and sensor configurations.
+ii  ros-foxy-class-loader                           2.0.3-1focal.20230527.051208         arm64        The class_loader package is a ROS-independent package for loading plugins during runtime and the foundation of the higher level ROS &quot;pluginlib&quot; library.
+ii  ros-foxy-console-bridge-vendor                  1.2.4-1focal.20230527.045200         arm64        Wrapper around console_bridge, providing nothing but a dependency on console_bridge, on some systems.
+ii  ros-foxy-domain-coordinator                     0.9.2-1focal.20230527.040545         arm64        A tool to coordinate unique ROS_DOMAIN_IDs across multiple processes
+ii  ros-foxy-dynamixel-sdk                          3.7.40-4focal.20230527.034347        arm64        This package is wrapping version of ROBOTIS Dynamixel SDK for ROS 2.
+ii  ros-foxy-eigen3-cmake-module                    0.1.1-1focal.20230527.041126         arm64        Exports a custom CMake module to find Eigen3.
+ii  ros-foxy-fastcdr                                1.0.13-1focal.20230527.033526        arm64        CDR serialization implementation.
+ii  ros-foxy-fastrtps                               2.1.4-1focal.20230527.042032         arm64        Implementation of RTPS standard.
+ii  ros-foxy-fastrtps-cmake-module                  1.0.4-1focal.20230527.045201         arm64        Provide CMake module to find eProsima FastRTPS.
+ii  ros-foxy-foonathan-memory-vendor                1.2.0-1focal.20230527.041836         arm64        Foonathan/memory vendor package for Fast-RTPS.
+ii  ros-foxy-geometry-msgs                          2.0.5-1focal.20230527.054419         arm64        A package containing some geometry related message definitions.
+ii  ros-foxy-gmock-vendor                           1.8.9001-1focal.20230527.040816      arm64        The package provides GoogleMock.
+ii  ros-foxy-gtest-vendor                           1.8.9001-1focal.20230527.040619      arm64        The package provides GoogleTest.
+ii  ros-foxy-kdl-parser                             2.4.1-2focal.20230527.050929         arm64        The Kinematics and Dynamics Library (KDL) defines a tree structure to represent the kinematic and dynamic parameters of a robot mechanism.
+ii  ros-foxy-launch                                 0.10.10-1focal.20230527.042114       arm64        The ROS launch tool.
+ii  ros-foxy-launch-testing                         0.10.10-1focal.20230527.042328       arm64        A package to create tests which involve launch files and multiple processes.
+ii  ros-foxy-launch-testing-ament-cmake             0.10.10-1focal.20230527.045532       arm64        A package providing cmake functions for running launch tests from the build.
+ii  ros-foxy-launch-xml                             0.10.10-1focal.20230527.042403       arm64        XML frontend for the launch package.
+ii  ros-foxy-launch-yaml                            0.10.10-1focal.20230527.044551       arm64        YAML frontend for the launch package.
+ii  ros-foxy-libcurl-vendor                         2.3.4-1focal.20230527.034810         arm64        Wrapper around libcurl, it provides a fixed CMake module and an ExternalProject build of it.
+ii  ros-foxy-librealsense2                          2.51.1-1focal.20230527.034906        arm64        Library for controlling and capturing data from the Intel(R) RealSense(TM) D400 devices.
+ii  ros-foxy-libyaml-vendor                         1.0.4-1focal.20230527.051235         arm64        Wrapper around libyaml, provides the last version (1.8.0 rc) that ships with a CMake module
+ii  ros-foxy-mcap-vendor                            0.6.0-1focal.20230531.175304         arm64        mcap vendor package
+ii  ros-foxy-message-filters                        3.2.7-1focal.20230606.034003         arm64        A set of ROS2 message filters which take in messages and may output those messages at a later time, based on the conditions that filter needs met.
+ii  ros-foxy-ompl                                   1.5.0-1focal.20230527.041911         arm64        OMPL is a free sampling-based motion planning library.
+ii  ros-foxy-orocos-kdl                             3.3.5-1focal.20230527.041439         arm64        This package contains a recent version of the Kinematics and Dynamics Library (KDL), distributed by the Orocos Project.
+ii  ros-foxy-osrf-pycommon                          0.1.11-1focal.20230527.042013        arm64        Commonly needed Python modules, used by Python software developed at OSRF.
+ii  ros-foxy-pluginlib                              2.5.4-1focal.20230527.051434         arm64        The pluginlib package provides tools for writing and dynamically loading plugins using the ROS build infrastructure.
+ii  ros-foxy-python-cmake-module                    0.8.1-1focal.20230527.045404         arm64        Provide CMake module with extra functionality for Python.
+ii  ros-foxy-python-qt-binding                      1.0.6-2focal.20230527.045449         arm64        This stack provides Python bindings for Qt.
+ii  ros-foxy-qt-dotgraph                            1.1.3-1focal.20230527.051929         arm64        qt_dotgraph provides helpers to work with dot graphs.
+ii  ros-foxy-qt-gui                                 1.1.3-1focal.20230527.045759         arm64        qt_gui provides the infrastructure for an integrated graphical user interface based on Qt.
+ii  ros-foxy-qt-gui-cpp                             1.1.3-1focal.20230527.051647         arm64        qt_gui_cpp provides the foundation for C++-bindings for qt_gui and creates bindings for every generator available.
+ii  ros-foxy-qt-gui-py-common                       1.1.3-1focal.20230527.050829         arm64        qt_gui_py_common provides common functionality for GUI plugins written in Python.
+ii  ros-foxy-rcl                                    1.1.14-1focal.20230527.064949        arm64        The ROS client library common implementation.
+ii  ros-foxy-rcl-action                             1.1.14-1focal.20230527.065734        arm64        Package containing a C-based ROS action implementation
+ii  ros-foxy-rcl-interfaces                         1.0.0-1focal.20230527.052551         arm64        The ROS client library common interfaces.
+ii  ros-foxy-rcl-logging-spdlog                     1.1.0-1focal.20230527.051207         arm64        Implementation of rcl_logging API for an spdlog backend.
+ii  ros-foxy-rcl-yaml-param-parser                  1.1.14-1focal.20230527.051509        arm64        Parse a YAML parameter file and populate the C data structure.
+ii  ros-foxy-rclpy                                  1.0.13-1focal.20230527.070432        arm64        Package containing the Python client.
+ii  ros-foxy-rcpputils                              1.3.2-1focal.20230527.050637         arm64        Package containing utility code for C++.
+ii  ros-foxy-rcutils                                1.1.5-1focal.20230527.050146         arm64        Package containing various utility types and functions for C
+ii  ros-foxy-resource-retriever                     2.3.4-1focal.20230527.050209         arm64        This package retrieves data from url-format files such as http://, ftp://, package:// file://, etc., and loads the data into memory.
+ii  ros-foxy-rmw                                    1.0.4-1focal.20230527.050902         arm64        Contains the ROS middleware API.
+ii  ros-foxy-rmw-dds-common                         1.0.3-1focal.20230527.052241         arm64        Define a common interface between DDS implementations of ROS middleware.
+ii  ros-foxy-rmw-fastrtps-cpp                       1.3.2-1focal.20230527.064419         arm64        Implement the ROS middleware interface using eProsima FastRTPS static code generation in C++.
+ii  ros-foxy-rmw-fastrtps-shared-cpp                1.3.2-1focal.20230527.052644         arm64        Code shared on static and dynamic type support of rmw_fastrtps_cpp.
+ii  ros-foxy-rmw-implementation                     1.0.3-1focal.20230527.064741         arm64        The decision which ROS middleware implementation should be used for C++.
+ii  ros-foxy-rmw-implementation-cmake               1.0.4-1focal.20230527.045456         arm64        CMake functions which can discover and enumerate available implementations.
+ii  ros-foxy-ros-environment                        2.5.1-1focal.20230527.033846         arm64        The package provides the environment variables `ROS_VERSION` and `ROS_DISTRO`.
+ii  ros-foxy-ros-workspace                          1.0.2-1focal.20230527.033103         arm64        Provides the prefix level environment files for ROS 2 packages.
+ii  ros-foxy-ros2cli                                0.9.13-1focal.20230527.071202        arm64        Framework for ROS 2 command line tools.
+ii  ros-foxy-rosbag2-compression                    0.3.11-1focal.20230531.180149        arm64        Compression implementations for rosbag2 bags and messages.
+ii  ros-foxy-rosbag2-cpp                            0.3.11-1focal.20230531.175714        arm64        C++ ROSBag2 client library
+ii  ros-foxy-rosbag2-storage                        0.3.11-1focal.20230531.175541        arm64        ROS2 independent storage format to store serialized ROS2 messages
+ii  ros-foxy-rosbag2-storage-default-plugins        0.3.11-1focal.20230531.180022        arm64        ROSBag2 SQLite3 storage plugin
+ii  ros-foxy-rosbag2-storage-mcap                   0.6.0-1focal.20230531.180150         arm64        rosbag2 storage plugin using the MCAP file format
+ii  ros-foxy-rosgraph-msgs                          1.0.0-1focal.20230527.053100         arm64        Messages relating to the ROS Computation Graph.
+ii  ros-foxy-rosidl-adapter                         1.3.1-1focal.20230527.044805         arm64        API and scripts to parse .msg/.srv/.action files and convert them to .idl.
+ii  ros-foxy-rosidl-cmake                           1.3.1-1focal.20230527.045122         arm64        The CMake functionality to invoke code generation for ROS interface files.
+ii  ros-foxy-rosidl-default-runtime                 1.0.1-1focal.20230527.052208         arm64        A configuration package defining the runtime for the ROS interfaces.
+ii  ros-foxy-rosidl-generator-c                     1.3.1-1focal.20230527.050858         arm64        Generate the ROS interfaces in C.
+ii  ros-foxy-rosidl-generator-cpp                   1.3.1-1focal.20230527.051037         arm64        Generate the ROS interfaces in C++.
+ii  ros-foxy-rosidl-generator-py                    0.9.7-1focal.20230527.051854         arm64        Generate the ROS interfaces in Python.
+ii  ros-foxy-rosidl-parser                          1.3.1-1focal.20230527.044949         arm64        The parser for ROS interface files.
+ii  ros-foxy-rosidl-runtime-c                       1.3.1-1focal.20230527.050613         arm64        Generate the ROS interfaces in C.
+ii  ros-foxy-rosidl-runtime-cpp                     1.3.1-1focal.20230527.045011         arm64        Generate the ROS interfaces in C++.
+ii  ros-foxy-rosidl-typesupport-c                   1.0.3-1focal.20230527.051637         arm64        Generate the type support for C messages.
+ii  ros-foxy-rosidl-typesupport-cpp                 1.0.3-1focal.20230527.051851         arm64        Generate the type support for C++ messages.
+ii  ros-foxy-rosidl-typesupport-fastrtps-c          1.0.4-1focal.20230527.051617         arm64        Generate the C interfaces for eProsima FastRTPS.
+ii  ros-foxy-rosidl-typesupport-fastrtps-cpp        1.0.4-1focal.20230527.051412         arm64        Generate the C++ interfaces for eProsima FastRTPS.
+ii  ros-foxy-rosidl-typesupport-interface           1.3.1-1focal.20230527.044811         arm64        The interface for rosidl typesupport packages.
+ii  ros-foxy-rosidl-typesupport-introspection-c     1.3.1-1focal.20230527.050900         arm64        Generate the message type support for dynamic message construction in C.
+ii  ros-foxy-rosidl-typesupport-introspection-cpp   1.3.1-1focal.20230527.051050         arm64        Generate the message type support for dynamic message construction in C++.
+ii  ros-foxy-rpyutils                               0.2.0-1focal.20230527.040658         arm64        Package containing various utility types and functions for Python
+ii  ros-foxy-rttest                                 0.9.0-1focal.20230527.045542         arm64        Instrumentation library for real-time performance testing
+ii  ros-foxy-rviz-assimp-vendor                     8.2.8-1focal.20230527.035442         arm64        Wrapper around assimp, providing nothing but a dependency on assimp, on some systems.
+ii  ros-foxy-rviz-ogre-vendor                       8.2.8-1focal.20230527.035528         arm64        Wrapper around ogre3d, it provides a fixed CMake module and an ExternalProject build of ogre.
+ii  ros-foxy-rviz-rendering                         8.2.8-1focal.20230527.050422         arm64        Library which provides the 3D rendering functionality in rviz.
+ii  ros-foxy-sdl2-vendor                            3.0.1-1focal.20230527.035542         arm64        Vendor library for SDL2.
+ii  ros-foxy-sensor-msgs                            2.0.5-1focal.20230527.055054         arm64        A package containing some sensor data related message and service definitions.
+ii  ros-foxy-shared-queues-vendor                   0.3.11-1focal.20230531.174803        arm64        Vendor package for concurrent queues from moodycamel
+ii  ros-foxy-spdlog-vendor                          1.1.3-1focal.20230527.045643         arm64        Wrapper around spdlog, providing nothing but a dependency on spdlog, on some systems.
+ii  ros-foxy-sqlite3-vendor                         0.3.11-1focal.20230531.175046        arm64        SQLite 3 vendor package
+ii  ros-foxy-std-msgs                               2.0.5-1focal.20230527.053140         arm64        A package containing some standard message definitions.
+ii  ros-foxy-tango-icons-vendor                     0.1.0-1focal.20230527.045656         arm64        tango_icons_vendor provides the public domain Tango icons for non-linux systems (Tango Icon Library) from the Tango Desktop Project
+ii  ros-foxy-tf-transformations                     1.0.2-1focal.20230527.040338         arm64        Reimplementation of the tf/transformations.py library for common Python spatial operations
+ii  ros-foxy-tinyxml-vendor                         0.8.2-1focal.20230527.035859         arm64        CMake shim over the tinxml library.
+ii  ros-foxy-tinyxml2-vendor                        0.7.4-1focal.20230527.035815         arm64        Wrapper around tinyxml2, providing nothing but a dependency on tinyxml2, on some systems.
+ii  ros-foxy-tracetools                             1.0.5-2focal.20230527.050452         arm64        Tracing wrapper for ROS 2.
+ii  ros-foxy-turtlebot3-description                 2.1.1-1focal.20230527.051817         arm64        3D models of the TurtleBot3 for simulation and visualization
+ii  ros-foxy-uncrustify-vendor                      1.4.0-1focal.20230527.034120         arm64        Wrapper around uncrustify, providing nothing but a dependency on uncrustify, on some systems.
+ii  ros-foxy-unique-identifier-msgs                 2.1.3-1focal.20230527.053240         arm64        ROS messages for universally unique identifiers.
+ii  ros-foxy-urdf                                   2.4.0-2focal.20230527.050713         arm64        This package contains a C++ parser for the Unified Robot Description Format (URDF), which is an XML format for representing a robot model.
+ii  ros-foxy-urdfdom                                2.3.3-1focal.20230527.045357         arm64        A library to access URDFs using the DOM model.
+ii  ros-foxy-urdfdom-headers                        1.0.5-1focal.20230527.033739         arm64        C++ headers for URDF.
+ii  ros-foxy-urg-c                                  1.0.4001-1focal.20230527.040018      arm64        The urg_c package
+ii  ros-foxy-xacro                                  2.0.7-1focal.20230527.044107         arm64        Xacro (XML Macros) Xacro is an XML macro language.
+ii  ros-foxy-yaml-cpp-vendor                        7.0.3-1focal.20230527.040053         arm64        Wrapper around yaml-cpp, it provides a fixed CMake module and an ExternalProject build of it.
+ii  ros-foxy-zstd-vendor                            0.3.11-1focal.20230531.175008        arm64        Zstd compression vendor package, providing a dependency for Zstd.

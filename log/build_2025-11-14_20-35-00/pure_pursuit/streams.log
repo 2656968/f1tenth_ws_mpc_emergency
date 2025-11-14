@@ -1,0 +1,111 @@
+[0.094s] Invoking command in '/home/meric/f1tenth_ws_rl/build/pure_pursuit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meric/f1tenth_ws_rl/install/f1tenth_stack:/home/meric/f1tenth_ws_rl/install/joy_teleop:/home/meric/f1tenth_ws_rl/install/stanley2_avoidance:/home/meric/f1tenth_ws_rl/install/simple_teleop:/home/meric/f1tenth_ws_rl/install/particle_filter:/home/meric/f1tenth_ws_rl/install/mouse_teleop:/home/meric/f1tenth_ws_rl/install/key_teleop:/home/meric/f1tenth_ws_rl/install/f1tenth_rl:/home/meric/f1tenth_ws_mpc_emergency/install/f1tenth_stack:/home/meric/f1tenth_ws_mpc_emergency/install/joy_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/stanley2_avoidance:/home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/particle_filter:/home/meric/f1tenth_ws_mpc_emergency/install/mouse_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/key_teleop:/home/meric/f1tenth_ws/install/f1tenth_stack:/home/meric/f1tenth_ws/install/joy_teleop:/home/meric/f1tenth_ws/install/stanley2_avoidance:/home/meric/f1tenth_ws/install/simple_teleop:/home/meric/f1tenth_ws/install/particle_filter:/home/meric/f1tenth_ws/install/mouse_teleop:/home/meric/f1tenth_ws/install/key_teleop:/opt/ros/foxy /snap/bin/cmake /home/meric/f1tenth_ws_rl/src/pure_pursuit -DCMAKE_INSTALL_PREFIX=/home/meric/f1tenth_ws_rl/install/pure_pursuit
+[0.256s] 2025/11/14 20:35:05.814565 cmd_run.go:1400: WARNING: cannot create user data directory: failed to verify SELinux context of /home/meric/snap: cannot locate "matchpathcon" executable
+[0.300s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.301s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.301s]   CMake.
+[0.301s] 
+[0.301s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.301s]   to tell CMake that the project requires at least <min> but has been updated
+[0.301s]   to work with policies introduced by <max> or earlier.
+[0.301s] 
+[0.302s] [0m
+[0.494s] -- The C compiler identification is GNU 9.4.0
+[0.682s] -- The CXX compiler identification is GNU 9.4.0
+[0.714s] -- Detecting C compiler ABI info
+[0.941s] -- Detecting C compiler ABI info - done
+[1.014s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.015s] -- Detecting C compile features
+[1.016s] -- Detecting C compile features - done
+[1.102s] -- Detecting CXX compiler ABI info
+[1.491s] -- Detecting CXX compiler ABI info - done
+[1.577s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.578s] -- Detecting CXX compile features
+[1.580s] -- Detecting CXX compile features - done
+[1.652s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.720s] [33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+[1.720s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[1.721s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[1.721s]   the cmake_policy command to set the policy and suppress this warning.
+[1.721s] 
+[1.721s] Call Stack (most recent call first):
+[1.721s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+[1.721s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+[1.721s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[1.721s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[1.722s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[1.722s]   CMakeLists.txt:29 (find_package)
+[1.722s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.722s] [0m
+[1.890s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3")
+[1.891s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.441s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[3.791s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.922s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[5.050s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")
+[5.289s] -- Found FastRTPS: /opt/ros/foxy/include
+[5.913s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.538s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[6.550s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.555s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[6.989s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[6.990s] -- Looking for pthread_create in pthreads
+[7.326s] -- Looking for pthread_create in pthreads - not found
+[7.326s] -- Looking for pthread_create in pthread
+[7.816s] -- Looking for pthread_create in pthread - found
+[7.819s] -- Found Threads: TRUE
+[9.058s] -- Found rclpy: 1.0.13 (/opt/ros/foxy/share/rclpy/cmake)
+[9.094s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[9.251s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[9.595s] -- Found ackermann_msgs: 2.0.2 (/opt/ros/foxy/share/ackermann_msgs/cmake)
+[9.790s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[10.133s] -- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)
+[10.494s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[10.542s] -- Found Eigen3: TRUE (found version "3.3.7")
+[10.571s] -- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)
+[12.015s] -- Configuring done (11.7s)
+[12.067s] -- Generating done (0.0s)
+[12.081s] -- Build files have been written to: /home/meric/f1tenth_ws_rl/build/pure_pursuit
+[12.134s] Invoked command in '/home/meric/f1tenth_ws_rl/build/pure_pursuit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meric/f1tenth_ws_rl/install/f1tenth_stack:/home/meric/f1tenth_ws_rl/install/joy_teleop:/home/meric/f1tenth_ws_rl/install/stanley2_avoidance:/home/meric/f1tenth_ws_rl/install/simple_teleop:/home/meric/f1tenth_ws_rl/install/particle_filter:/home/meric/f1tenth_ws_rl/install/mouse_teleop:/home/meric/f1tenth_ws_rl/install/key_teleop:/home/meric/f1tenth_ws_rl/install/f1tenth_rl:/home/meric/f1tenth_ws_mpc_emergency/install/f1tenth_stack:/home/meric/f1tenth_ws_mpc_emergency/install/joy_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/stanley2_avoidance:/home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/particle_filter:/home/meric/f1tenth_ws_mpc_emergency/install/mouse_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/key_teleop:/home/meric/f1tenth_ws/install/f1tenth_stack:/home/meric/f1tenth_ws/install/joy_teleop:/home/meric/f1tenth_ws/install/stanley2_avoidance:/home/meric/f1tenth_ws/install/simple_teleop:/home/meric/f1tenth_ws/install/particle_filter:/home/meric/f1tenth_ws/install/mouse_teleop:/home/meric/f1tenth_ws/install/key_teleop:/opt/ros/foxy /snap/bin/cmake /home/meric/f1tenth_ws_rl/src/pure_pursuit -DCMAKE_INSTALL_PREFIX=/home/meric/f1tenth_ws_rl/install/pure_pursuit
+[12.136s] Invoking command in '/home/meric/f1tenth_ws_rl/build/pure_pursuit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meric/f1tenth_ws_rl/install/f1tenth_stack:/home/meric/f1tenth_ws_rl/install/joy_teleop:/home/meric/f1tenth_ws_rl/install/stanley2_avoidance:/home/meric/f1tenth_ws_rl/install/simple_teleop:/home/meric/f1tenth_ws_rl/install/particle_filter:/home/meric/f1tenth_ws_rl/install/mouse_teleop:/home/meric/f1tenth_ws_rl/install/key_teleop:/home/meric/f1tenth_ws_rl/install/f1tenth_rl:/home/meric/f1tenth_ws_mpc_emergency/install/f1tenth_stack:/home/meric/f1tenth_ws_mpc_emergency/install/joy_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/stanley2_avoidance:/home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/particle_filter:/home/meric/f1tenth_ws_mpc_emergency/install/mouse_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/key_teleop:/home/meric/f1tenth_ws/install/f1tenth_stack:/home/meric/f1tenth_ws/install/joy_teleop:/home/meric/f1tenth_ws/install/stanley2_avoidance:/home/meric/f1tenth_ws/install/simple_teleop:/home/meric/f1tenth_ws/install/particle_filter:/home/meric/f1tenth_ws/install/mouse_teleop:/home/meric/f1tenth_ws/install/key_teleop:/opt/ros/foxy /snap/bin/cmake --build /home/meric/f1tenth_ws_rl/build/pure_pursuit -- -j6 -l6
+[12.404s] 2025/11/14 20:35:17.962319 cmd_run.go:1400: WARNING: cannot create user data directory: failed to verify SELinux context of /home/meric/snap: cannot locate "matchpathcon" executable
+[12.639s] [ 25%] [32mBuilding CXX object CMakeFiles/pure_pursuit.dir/src/pure_pursuit.cpp.o[0m
+[12.663s] [ 50%] [32mBuilding CXX object CMakeFiles/waypoint_visualizer.dir/src/waypoint_visualizer.cpp.o[0m
+[25.302s] [ 75%] [1m[32mLinking CXX executable waypoint_visualizer[0m
+[25.697s] [ 75%] Built target waypoint_visualizer
+[37.350s] [100%] [1m[32mLinking CXX executable pure_pursuit[0m
+[38.856s] [100%] Built target pure_pursuit
+[38.879s] Invoked command in '/home/meric/f1tenth_ws_rl/build/pure_pursuit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meric/f1tenth_ws_rl/install/f1tenth_stack:/home/meric/f1tenth_ws_rl/install/joy_teleop:/home/meric/f1tenth_ws_rl/install/stanley2_avoidance:/home/meric/f1tenth_ws_rl/install/simple_teleop:/home/meric/f1tenth_ws_rl/install/particle_filter:/home/meric/f1tenth_ws_rl/install/mouse_teleop:/home/meric/f1tenth_ws_rl/install/key_teleop:/home/meric/f1tenth_ws_rl/install/f1tenth_rl:/home/meric/f1tenth_ws_mpc_emergency/install/f1tenth_stack:/home/meric/f1tenth_ws_mpc_emergency/install/joy_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/stanley2_avoidance:/home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/particle_filter:/home/meric/f1tenth_ws_mpc_emergency/install/mouse_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/key_teleop:/home/meric/f1tenth_ws/install/f1tenth_stack:/home/meric/f1tenth_ws/install/joy_teleop:/home/meric/f1tenth_ws/install/stanley2_avoidance:/home/meric/f1tenth_ws/install/simple_teleop:/home/meric/f1tenth_ws/install/particle_filter:/home/meric/f1tenth_ws/install/mouse_teleop:/home/meric/f1tenth_ws/install/key_teleop:/opt/ros/foxy /snap/bin/cmake --build /home/meric/f1tenth_ws_rl/build/pure_pursuit -- -j6 -l6
+[38.889s] Invoking command in '/home/meric/f1tenth_ws_rl/build/pure_pursuit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meric/f1tenth_ws_rl/install/f1tenth_stack:/home/meric/f1tenth_ws_rl/install/joy_teleop:/home/meric/f1tenth_ws_rl/install/stanley2_avoidance:/home/meric/f1tenth_ws_rl/install/simple_teleop:/home/meric/f1tenth_ws_rl/install/particle_filter:/home/meric/f1tenth_ws_rl/install/mouse_teleop:/home/meric/f1tenth_ws_rl/install/key_teleop:/home/meric/f1tenth_ws_rl/install/f1tenth_rl:/home/meric/f1tenth_ws_mpc_emergency/install/f1tenth_stack:/home/meric/f1tenth_ws_mpc_emergency/install/joy_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/stanley2_avoidance:/home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/particle_filter:/home/meric/f1tenth_ws_mpc_emergency/install/mouse_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/key_teleop:/home/meric/f1tenth_ws/install/f1tenth_stack:/home/meric/f1tenth_ws/install/joy_teleop:/home/meric/f1tenth_ws/install/stanley2_avoidance:/home/meric/f1tenth_ws/install/simple_teleop:/home/meric/f1tenth_ws/install/particle_filter:/home/meric/f1tenth_ws/install/mouse_teleop:/home/meric/f1tenth_ws/install/key_teleop:/opt/ros/foxy /snap/bin/cmake --build /home/meric/f1tenth_ws_rl/build/pure_pursuit --target install -- -j6 -l6
+[39.180s] 2025/11/14 20:35:44.731851 cmd_run.go:1400: WARNING: cannot create user data directory: failed to verify SELinux context of /home/meric/snap: cannot locate "matchpathcon" executable
+[39.431s] [ 50%] Built target pure_pursuit
+[39.488s] [100%] Built target waypoint_visualizer
+[39.539s] [36mInstall the project...[0m
+[39.556s] -- Install configuration: ""
+[39.557s] -- Installing: /home/meric/f1tenth_ws_rl/install/pure_pursuit/lib/pure_pursuit/pure_pursuit
+[39.562s] -- Set non-toolchain portion of runtime path of "/home/meric/f1tenth_ws_rl/install/pure_pursuit/lib/pure_pursuit/pure_pursuit" to ""
+[39.562s] -- Installing: /home/meric/f1tenth_ws_rl/install/pure_pursuit/lib/pure_pursuit/waypoint_visualizer
+[39.564s] -- Set non-toolchain portion of runtime path of "/home/meric/f1tenth_ws_rl/install/pure_pursuit/lib/pure_pursuit/waypoint_visualizer" to ""
+[39.577s] -- Installing: /home/meric/f1tenth_ws_rl/install/pure_pursuit/share/pure_pursuit/launch
+[39.577s] -- Installing: /home/meric/f1tenth_ws_rl/install/pure_pursuit/share/pure_pursuit/launch/pure_pursuit_launch.py
+[39.578s] -- Installing: /home/meric/f1tenth_ws_rl/install/pure_pursuit/share/pure_pursuit/launch/sim_pure_pursuit.rviz
+[39.578s] -- Installing: /home/meric/f1tenth_ws_rl/install/pure_pursuit/share/pure_pursuit/launch/sim_pure_pursuit_launch.py
+[39.579s] -- Installing: /home/meric/f1tenth_ws_rl/install/pure_pursuit/share/pure_pursuit/launch/pure_pursuit.rviz
+[39.579s] -- Installing: /home/meric/f1tenth_ws_rl/install/pure_pursuit/share/pure_pursuit/config
+[39.580s] -- Installing: /home/meric/f1tenth_ws_rl/install/pure_pursuit/share/pure_pursuit/config/config.yaml
+[39.580s] -- Installing: /home/meric/f1tenth_ws_rl/install/pure_pursuit/share/pure_pursuit/config/sim_config.yaml
+[39.581s] -- Installing: /home/meric/f1tenth_ws_rl/install/pure_pursuit/share/ament_index/resource_index/package_run_dependencies/pure_pursuit
+[39.582s] -- Installing: /home/meric/f1tenth_ws_rl/install/pure_pursuit/share/ament_index/resource_index/parent_prefix_path/pure_pursuit
+[39.585s] -- Installing: /home/meric/f1tenth_ws_rl/install/pure_pursuit/share/pure_pursuit/environment/ament_prefix_path.sh
+[39.586s] -- Installing: /home/meric/f1tenth_ws_rl/install/pure_pursuit/share/pure_pursuit/environment/ament_prefix_path.dsv
+[39.586s] -- Installing: /home/meric/f1tenth_ws_rl/install/pure_pursuit/share/pure_pursuit/environment/path.sh
+[39.586s] -- Installing: /home/meric/f1tenth_ws_rl/install/pure_pursuit/share/pure_pursuit/environment/path.dsv
+[39.586s] -- Installing: /home/meric/f1tenth_ws_rl/install/pure_pursuit/share/pure_pursuit/local_setup.bash
+[39.586s] -- Installing: /home/meric/f1tenth_ws_rl/install/pure_pursuit/share/pure_pursuit/local_setup.sh
+[39.586s] -- Installing: /home/meric/f1tenth_ws_rl/install/pure_pursuit/share/pure_pursuit/local_setup.zsh
+[39.587s] -- Installing: /home/meric/f1tenth_ws_rl/install/pure_pursuit/share/pure_pursuit/local_setup.dsv
+[39.587s] -- Installing: /home/meric/f1tenth_ws_rl/install/pure_pursuit/share/pure_pursuit/package.dsv
+[39.587s] -- Installing: /home/meric/f1tenth_ws_rl/install/pure_pursuit/share/ament_index/resource_index/packages/pure_pursuit
+[39.595s] -- Installing: /home/meric/f1tenth_ws_rl/install/pure_pursuit/share/pure_pursuit/cmake/pure_pursuitConfig.cmake
+[39.595s] -- Installing: /home/meric/f1tenth_ws_rl/install/pure_pursuit/share/pure_pursuit/cmake/pure_pursuitConfig-version.cmake
+[39.596s] -- Installing: /home/meric/f1tenth_ws_rl/install/pure_pursuit/share/pure_pursuit/package.xml
+[39.604s] Invoked command in '/home/meric/f1tenth_ws_rl/build/pure_pursuit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/meric/f1tenth_ws_rl/install/f1tenth_stack:/home/meric/f1tenth_ws_rl/install/joy_teleop:/home/meric/f1tenth_ws_rl/install/stanley2_avoidance:/home/meric/f1tenth_ws_rl/install/simple_teleop:/home/meric/f1tenth_ws_rl/install/particle_filter:/home/meric/f1tenth_ws_rl/install/mouse_teleop:/home/meric/f1tenth_ws_rl/install/key_teleop:/home/meric/f1tenth_ws_rl/install/f1tenth_rl:/home/meric/f1tenth_ws_mpc_emergency/install/f1tenth_stack:/home/meric/f1tenth_ws_mpc_emergency/install/joy_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/stanley2_avoidance:/home/meric/f1tenth_ws_mpc_emergency/install/simple_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/particle_filter:/home/meric/f1tenth_ws_mpc_emergency/install/mouse_teleop:/home/meric/f1tenth_ws_mpc_emergency/install/key_teleop:/home/meric/f1tenth_ws/install/f1tenth_stack:/home/meric/f1tenth_ws/install/joy_teleop:/home/meric/f1tenth_ws/install/stanley2_avoidance:/home/meric/f1tenth_ws/install/simple_teleop:/home/meric/f1tenth_ws/install/particle_filter:/home/meric/f1tenth_ws/install/mouse_teleop:/home/meric/f1tenth_ws/install/key_teleop:/opt/ros/foxy /snap/bin/cmake --build /home/meric/f1tenth_ws_rl/build/pure_pursuit --target install -- -j6 -l6

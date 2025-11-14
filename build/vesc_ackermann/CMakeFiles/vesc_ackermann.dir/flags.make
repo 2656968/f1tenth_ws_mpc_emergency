@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DSPDLOG_COMPILED_LIB -Dvesc_ackermann_EXPORTS
 
-CXX_INCLUDES = -I/home/meric/f1tenth_ws_mpc_emergency/src/f1tenth_system/vesc/vesc_ackermann/include -isystem /home/meric/f1tenth_ws_mpc_emergency/install/vesc_msgs/include -isystem /opt/ros/foxy/include
+CXX_INCLUDES = -I/home/meric/f1tenth_ws_rl/src/f1tenth_system/vesc/vesc_ackermann/include -isystem /home/meric/f1tenth_ws_rl/install/vesc_msgs/include -isystem /opt/ros/foxy/include
 
 CXX_FLAGS = -fPIC
 

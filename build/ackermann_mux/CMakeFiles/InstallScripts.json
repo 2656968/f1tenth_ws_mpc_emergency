@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/home/meric/f1tenth_ws_mpc_emergency/build/ackermann_mux/cmake_install.cmake"
+		"/home/meric/f1tenth_ws_rl/build/ackermann_mux/cmake_install.cmake"
 	],
 	"Parallel" : false
 }
