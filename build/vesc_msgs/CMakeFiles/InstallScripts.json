@@ -1,8 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/meric/f1tenth_ws_rl/build/vesc_msgs/cmake_install.cmake",
-		"/home/meric/f1tenth_ws_rl/build/vesc_msgs/vesc_msgs__py/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

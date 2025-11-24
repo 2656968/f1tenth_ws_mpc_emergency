@@ -1,5 +1,0 @@
-gym
-matplotlib
-numpy
-setuptools
-torch

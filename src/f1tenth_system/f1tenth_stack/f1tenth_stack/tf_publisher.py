@@ -16,13 +16,13 @@ class FramePublisher(Node):
         t.header.stamp = self.get_clock().now().to_msg()
         t.header.frame_id = 'base_link'
         t.child_frame_id = 'laser'
-        t.transform.translation.x = 0.27
+        t.transform.translation.x = 0.265
         t.transform.translation.y = 0.0
-        t.transform.translation.z = 0.11
+        t.transform.translation.z = 0.04
         t.transform.rotation.x = 0.0
         t.transform.rotation.y = 0.0
-        t.transform.rotation.z = 0.0
-        t.transform.rotation.w = 1.0
+        t.transform.rotation.z = 1.0
+        t.transform.rotation.w = 0.0
         self.br.sendTransform(t)
 
         t2 = TransformStamped()

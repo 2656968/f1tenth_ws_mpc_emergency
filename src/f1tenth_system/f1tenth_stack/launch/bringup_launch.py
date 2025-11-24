@@ -117,12 +117,29 @@ def generate_launch_description():
         name='throttle_interpolator',
         parameters=[LaunchConfiguration('vesc_config')]
     )
-    urg_node = Node(
-        package='urg_node',
-        executable='urg_node_driver',
-        name='urg_node',
-        parameters=[LaunchConfiguration('sensors_config')]
+#    urg_node = Node(
+#        package='urg_node',
+#        executable='urg_node_driver',
+#       name='urg_node',
+#        parameters=[LaunchConfiguration('sensors_config')]
+#    )
+    # 변경 (RPLIDAR S3)  
+    rplidar_node = Node(  
+        package='rplidar_ros',  
+        executable='rplidar_composition',  
+        name='rplidar_node',  
+        parameters=[{  
+            'serial_port': '/dev/ttyUSB0',  # 포트 확인 필요  
+            'frame_id': 'laser',  
+            'angle_compensate': True,  
+            'scan_mode': 'Standard'  # S3는 여러 스캔 모드 지원  
+        }],  
+        output='screen'  
     )
+
+
+
+
     ackermann_mux_node = Node(
         package='ackermann_mux',
         executable='ackermann_mux',
@@ -134,7 +151,7 @@ def generate_launch_description():
         package='tf2_ros',
         executable='static_transform_publisher',        
         name='static_baselink_to_laser',
-        arguments=['0.27', '0.0', '0.11', '0.0', '0.0', '0.0', 'base_link', 'laser']
+        arguments=['0.29', '0.0', '0.10', '1.5708', '0.0', '0.0', 'base_link', 'laser']
     )
     
     static_imu_tf_node = Node(
@@ -159,7 +176,8 @@ def generate_launch_description():
     ld.add_action(vesc_to_odom_node)
     ld.add_action(vesc_driver_node)
     # ld.add_action(throttle_interpolator_node)
-    ld.add_action(urg_node)
+#    ld.add_action(urg_node)
+    ld.add_action(rplidar_node)
     ld.add_action(ackermann_mux_node)
     ld.add_action(static_tf_node)
     ld.add_action(static_imu_tf_node)

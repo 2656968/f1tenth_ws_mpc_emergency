@@ -35,11 +35,11 @@ class StanleyAvoidance(Node):
     def __init__(self):
         super().__init__("stanley2_avoidance_node")
 
-        self.declare_parameter("waypoints_path", "/home/meric/f1tenth_ws_mpc_emergency/src/waypoint_generator/src/1104_final.csv")
-        self.declare_parameter("waypoints_path_2nd", "/home/meric/f1tenth_ws_mpc_emergency/src/waypoint_generator/src/1104_final.csv")
+        self.declare_parameter("waypoints_path", "/home/meric/f1tenth_ws/src/waypoint_generator/src/waypoints_opt1.csv")
+        self.declare_parameter("waypoints_path_2nd", "/home/meric/f1tenth_ws/src/waypoint_generator/src/waypoints_opt1.csv")
         self.declare_parameter("scan_topic", "/scan")
         self.declare_parameter("odom_topic", "/pf/pose/odom")
-        self.declare_parameter("drive_topic", "/drive")
+        self.declare_parameter("drive_topic", "/ackermann_cmd")
         self.declare_parameter("rviz_current_waypoint_topic", "/current_waypoint")
         self.declare_parameter("rviz_lookahead_waypoint_topic", "/lookahead_waypoint")
         self.declare_parameter("stanley_avoidance_path_topic", "/stanley_avoidance_path")
@@ -47,20 +47,20 @@ class StanleyAvoidance(Node):
         self.declare_parameter("occupancy_grid_topic", "/occupancy_grid")
 
         self.declare_parameter("grid_width_meters", 6.0)
-        self.declare_parameter("K_p", 0.25)
-        self.declare_parameter("K_p_obstacle", 0.4)
-        self.declare_parameter("K_E", 1.0)
+        self.declare_parameter("K_p", 0.4)
+        self.declare_parameter("K_p_obstacle", 0.8)
+        self.declare_parameter("K_E", 2.0)
         self.declare_parameter("K_H", 1.5)
-        self.declare_parameter("min_lookahead", 0.5)
-        self.declare_parameter("max_lookahead", 4.0)
-        self.declare_parameter("min_lookahead_speed", 1.0)
-        self.declare_parameter("max_lookahead_speed", 2.0)
+        self.declare_parameter("min_lookahead", 1.0)
+        self.declare_parameter("max_lookahead", 3.0)
+        self.declare_parameter("min_lookahead_speed", 1.5)
+        self.declare_parameter("max_lookahead_speed", 3.0)
         self.declare_parameter("interpolation_distance", 0.1)
         self.declare_parameter("velocity_min", 1.0)
         self.declare_parameter("velocity_max", 2.0)
-        self.declare_parameter("velocity_percentage", 0.5)
+        self.declare_parameter("velocity_percentage", 0.3)
         self.declare_parameter("steering_limit", 25.0)
-        self.declare_parameter("cells_per_meter", 20)
+        self.declare_parameter("cells_per_meter", 10)
 
         self.declare_parameter("lane_number", 0)
 
@@ -307,12 +307,12 @@ class StanleyAvoidance(Node):
 
         # determine velocity
         if self.obstacle_detected and self.velocity_percentage > 0.0:
-            if np.degrees(angle) < 5.0:
-                velocity = 1.5
-            elif np.degrees(angle) < 12.0:
-                velocity = 1.0
+            if np.degrees(angle) < 10.0:
+                velocity = self.velocity_max
+            elif np.degrees(angle) < 20.0:
+                velocity = (self.velocity_max + self.velocity_min) / 2
             else:
-                velocity = 0.8
+                velocity = self.velocity_min
 
         else:
             # Set velocity to velocity of racing line
@@ -320,7 +320,6 @@ class StanleyAvoidance(Node):
 
         # publish drive message
         drive_msg = AckermannDriveStamped()
-        drive_msg.header.stamp = self.get_clock().now().to_msg()  # 이 줄 추가  
         drive_msg.drive.speed = velocity
         drive_msg.drive.steering_angle = angle
         self.get_logger().info(
@@ -379,7 +378,6 @@ class StanleyAvoidance(Node):
         velocity = self.target_velocity * self.velocity_percentage
 
         drive_msg = AckermannDriveStamped()
-        drive_msg.header.stamp = self.get_clock().now().to_msg()  # 이 줄 추가  
         drive_msg.drive.speed = velocity
         drive_msg.drive.steering_angle = angle
         self.drive_pub.publish(drive_msg)
@@ -467,7 +465,6 @@ class StanleyAvoidance(Node):
             self.get_logger().info("Could not find a target path, halting vehicle")
             # publish drive message
             drive_msg = AckermannDriveStamped()
-            drive_msg.header.stamp = self.get_clock().now().to_msg()  # 이 줄 추가  
             drive_msg.drive.speed = 0.0
             drive_msg.drive.steering_angle = 0.0
             self.drive_pub.publish(drive_msg)
@@ -716,12 +713,12 @@ class WaypointUtils:
         node,
         L=1.7,
         interpolation_distance=None,
-        filepath="/home/meric/f1tenth_ws_mpc_emergency/src/waypoint_generator/src/1014_final_f1tenth.csv",
+        filepath="/home/meric/f1tenth_ws/src/waypoint_generator/src/waypoints_opt2.csv",
         min_lookahead=0.5,
         max_lookahead=3.0,
         min_lookahead_speed=3.0,
         max_lookahead_speed=6.0,
-        filepath_2nd="/home/meric/f1tenth_ws_mpc_emergency/src/waypoint_generator/src/1014_final_f1tenth.csv",
+        filepath_2nd="/home/meric/f1tenth_ws/src/waypoint_generator/src/waypoints_opt2.csv",
         lane_number=0,
     ):
 

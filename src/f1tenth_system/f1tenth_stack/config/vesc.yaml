@@ -50,7 +50,7 @@ vesc_to_odom:
   ros__parameters:
     odom_frame: odom
     base_frame: base_link
-    publish_tf: false #true->false(change in 25-11-12)
+    publish_tf: true #true->false(change in 25-11-12)
     use_servo_cmd_to_calc_angular_velocity: true 
     speed_to_erpm_gain: 4614.0
     speed_to_erpm_offset: 0.0
@@ -62,7 +62,7 @@ vesc_to_odom_node:
   ros__parameters:
     odom_frame: odom
     base_frame: base_link
-    publish_tf: false #true->false(change in 25-11-12)
+    publish_tf: true #true->false(change in 25-11-12)
     use_servo_cmd_to_calc_angular_velocity: true
     speed_to_erpm_gain: 4614.0
     speed_to_erpm_offset: 0.0

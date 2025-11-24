@@ -244,10 +244,10 @@ class ParticleFiler(Node):
         # header
         t.header.stamp = stamp
         t.header.frame_id = '/map'
-        t.child_frame_id = '/base_link'
+        t.child_frame_id = '/odom'
         # translation
-        t.transform.translation.x = pose[0] - 0.27 * np.cos(pose[2])
-        t.transform.translation.y = pose[1] - 0.27 * np.cos(pose[2])
+        t.transform.translation.x = pose[0]
+        t.transform.translation.y = pose[1]
         t.transform.translation.z = 0.0
         q = tf_transformations.quaternion_from_euler(0., 0., pose[2])
         # rotation

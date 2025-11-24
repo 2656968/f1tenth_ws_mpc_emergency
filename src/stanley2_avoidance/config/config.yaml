@@ -1,12 +1,12 @@
 rrt:
   ros__parameters:
-    waypoints_path: "/home/meric/f1tenth_ws_mpc_emergency/src/waypoint_generator/src/1104_final.csv"
-    waypoints_path_2nd: "/home/meric/f1tenth_ws_mpc_emergency/src/waypoint_generator/src/1104_final.csv"
+    waypoints_path: "/home/meric/f1tenth_ws_rl/src/waypoint_generator/src/waypoint_opt1.csv"
+    waypoints_path_2nd: "/home/meric/f1tenth_ws_rl/src/waypoint_generator/src/waypoint_opt1.csv"
     scan_topic: "/scan"
     odom_topic: "/pf/pose/odom"
     drive_topic: "/drive"
     interpolation_distance: 0.1
-    velocity_percentage: 0.5
+    velocity_percentage: 0.3
 
     lane_number: 0
 
@@ -28,4 +28,4 @@ rrt:
 
 waypoint_visualizer_node:
   ros__parameters:
-    waypoints_path: "/home/meric/f1tenth_ws_mpc_emergency/src/waypoint_generator/src/1104_final.csv"
+    waypoints_path: "/home/meric/f1tenth_ws_rl/src/waypoint_generator/src/waypoint_opt1.csv"

@@ -13,6 +13,10 @@ ackermann_mux:
         topic: teleop  
         timeout: 0.5  
         priority: 100  
+      mpc:  
+        topic: /mpc/drive  
+        timeout: 0.5  
+        priority: 60  
 #    locks:  
 #      emergency_lock:  
 #        topic: emergency_brake_lock  
