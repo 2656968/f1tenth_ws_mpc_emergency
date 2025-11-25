@@ -5,10 +5,10 @@ particle_filter:
     odometry_topic: '/odom'
     # range data downsampling
     angle_step: 12
-    max_particles: 1500
+    max_particles: 4000
     squash_factor: 2.5
     # visualization
-    viz: 0
+    viz: 1
     max_viz_particles: 60
     # ray marching method
     range_method: 'rmgpu'

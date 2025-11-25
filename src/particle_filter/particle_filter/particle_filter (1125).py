@@ -332,58 +332,44 @@ class ParticleFiler(Node):
         '''
         Initializes reused buffers, and stores the relevant laser scanner data for later use.
         '''
-        # =================================================================
-        # 1. 설정값
-        # =================================================================
-        MIN_RANGE = 0.15  # 15cm 이내 노이즈 제거 (가운데 초록점 제거용)
-        ANGLE_MIN = np.radians(110) # 사용 범위 시작 (뒤쪽 자르기용)
-        ANGLE_MAX = np.radians(250) # 사용 범위 끝 (뒤쪽 자르기용)
-        # 참고: S3 라이다 기준 0도가 뒤쪽이므로, 110~250도는 "앞쪽 부채꼴"을 의미
-
-        # =================================================================
-        # 2. 데이터 전처리 (매 프레임 실행)
-        # =================================================================
-        # (1) 원본 데이터 가져오기
-        raw_ranges = np.array(msg.ranges)
-        
-        # (2) 각도 배열 생성 (한 번만 만들고 재활용해도 되지만 안전하게 매번 생성)
-        raw_angles = np.linspace(msg.angle_min, msg.angle_max, len(raw_ranges))
-
-        # (3) 다운샘플링 (일단 전체에서 뽑음)
-        sampled_ranges = raw_ranges[::self.ANGLE_STEP]
-        sampled_angles = raw_angles[::self.ANGLE_STEP]
-
-        # =================================================================
-        # 3. 필터링 (각도 & 거리 동시 적용)
-        # =================================================================
-        
-        # (A) 각도 마스크: 110도 ~ 250도 사이인 것만 True
-        mask_angle = (sampled_angles >= ANGLE_MIN) & (sampled_angles <= ANGLE_MAX)
-        
-        # (B) 거리 마스크: 15cm보다 먼 것만 True (가운데 점 제거 핵심!)
-        mask_dist = (sampled_ranges > MIN_RANGE)
-
-        # (C) 최종 마스크 (교집합)
-        final_mask = mask_angle & mask_dist
-
-        # =================================================================
-        # 4. 클래스 변수 업데이트 (여기가 중요!!!)
-        # =================================================================
-        # 반드시 self.downsampled_... 변수 자체를 덮어써야 함
-        self.downsampled_ranges = sampled_ranges[final_mask]
-        self.downsampled_angles = sampled_angles[final_mask]
-
-        # =================================================================
-        # 5. 시각화 및 버퍼 준비
-        # =================================================================
-        # 데이터 크기가 매번 바뀌므로 쿼리 버퍼도 크기에 맞춰 다시 잡아줘야 안전함
-        num_valid = self.downsampled_angles.shape[0]
-        
-        if num_valid > 0:
-            self.viz_queries = np.zeros((num_valid, 3), dtype=np.float32)
-            self.viz_ranges = np.zeros(num_valid, dtype=np.float32)
-        
-        # 초기화 플래그
+        MIN_RANGE = 0.15  # 15cm 이내 노이즈 제거  
+      
+        if not isinstance(self.laser_angles, np.ndarray):  
+            self.get_logger().info('...Received first LiDAR message')  
+          
+            # 전체 각도 배열 생성  
+            self.laser_angles = np.linspace(msg.angle_min, msg.angle_max, len(msg.ranges))  
+          
+            # 다운샘플링  
+            self.downsampled_angles = np.copy(self.laser_angles[0::self.ANGLE_STEP]).astype(np.float32)  
+          
+            # 각도 마스크: 110도~260도 범위 제외 (뒤쪽 좌측 제외)  
+            # 사용 범위: -180도~110도 + 260도~180도  
+            self.angle_mask = (self.downsampled_angles < np.radians(110)) | \
+                             (self.downsampled_angles > np.radians(260))  
+          
+            # 각도 필터 적용  
+            self.downsampled_angles = self.downsampled_angles[self.angle_mask]  
+          
+            # 시각화 버퍼 초기화  
+            self.viz_queries = np.zeros((self.downsampled_angles.shape[0], 3), dtype=np.float32)  
+            self.viz_ranges = np.zeros(self.downsampled_angles.shape[0], dtype=np.float32)  
+          
+            self.get_logger().info(f'Filtered rays: {self.downsampled_angles.shape[0]}')  
+      
+        # 매 프레임: 거리 데이터 처리  
+        downsampled_ranges = np.array(msg.ranges[::self.ANGLE_STEP])  
+      
+        # 각도 필터 적용  
+        downsampled_ranges = downsampled_ranges[self.angle_mask]  
+      
+        # 거리 필터 적용 (15cm 이상만 유효)  
+        valid_dist_mask = downsampled_ranges > MIN_RANGE  
+        self.downsampled_ranges = downsampled_ranges[valid_dist_mask]  
+      
+        # 각도도 동일하게 필터링  
+        self.downsampled_angles_filtered = self.downsampled_angles[valid_dist_mask]  
+      
         self.lidar_initialized = True
 
     def odomCB(self, msg):
@@ -544,35 +530,38 @@ class ParticleFiler(Node):
         This function computes a probablistic weight for each particle in the proposal distribution.
         These weights represent how probable each proposed (x,y,theta) pose is given the measured
         ranges from the lidar scanner.
+
+        There are 4 different variants using various features of RangeLibc for demonstration purposes.
+        - VAR_REPEAT_ANGLES_EVAL_SENSOR is the most stable, and is very fast.
+        - VAR_NO_EVAL_SENSOR_MODEL directly indexes the precomputed sensor model. This is slow
+                                   but it demonstrates what self.range_method.eval_sensor_model does
+        - VAR_RADIAL_CDDT_OPTIMIZATIONS is only compatible with CDDT or PCDDT, it implments the radial
+                                        optimizations to CDDT which simultaneously performs ray casting
+                                        in two directions, reducing the amount of work by roughly a third
         '''
         
-        # 1. 실제 관측값(obs)의 크기 확인 (거리 필터링으로 인해 가변적임)
-        num_rays = len(obs)
-       
-        # 2. 버퍼 할당 (RangeLibc가 요구하는 float32 타입으로 생성)
-        # 매번 크기가 다를 수 있으므로 안전하게 재할당
-        if self.RANGELIB_VAR <= 1:
-            self.queries = np.zeros((num_rays*self.MAX_PARTICLES,3), dtype=np.float32)
-        else:
-            self.queries = np.zeros((self.MAX_PARTICLES,3), dtype=np.float32)
-       
-        self.ranges = np.zeros(num_rays*self.MAX_PARTICLES, dtype=np.float32)
-       
-        # 3. 사용할 각도 데이터 선택
-        if hasattr(self, 'downsampled_angles_filtered') and len(self.downsampled_angles_filtered) == num_rays:
-            angles_to_use = self.downsampled_angles_filtered
-        else:
-            # 만약 필터링된 각도 배열이 없다면 기존 방식대로 슬라이싱
-            angles_to_use = self.downsampled_angles[:num_rays]
-       
-        # ★★★ [핵심 수정] RangeLibc 에러 해결을 위한 강제 형변환 ★★★
-        # ValueError: Buffer dtype mismatch, expected 'float' but got 'double' 방지
-        angles_to_use = angles_to_use.astype(np.float32)
+         # 실제 관측값 크기 사용 (거리 필터링 후)  
+        num_rays = len(obs)  # ← 이 부분 수정  
+      
+        # 버퍼를 매번 재할당 (크기가 변경될 수 있으므로)  
+        if self.RANGELIB_VAR <= 1:  
+            self.queries = np.zeros((num_rays*self.MAX_PARTICLES,3), dtype=np.float32)  
+        else:  
+            self.queries = np.zeros((self.MAX_PARTICLES,3), dtype=np.float32)  
+      
+        self.ranges = np.zeros(num_rays*self.MAX_PARTICLES, dtype=np.float32)  
+      
+      
+        # ← 여기까지만 수정
 
-        self.tiled_angles = np.tile(angles_to_use, self.MAX_PARTICLES)
+        if hasattr(self, 'downsampled_angles_filtered') and len(self.downsampled_angles_filtered) == num_rays:  
+            angles_to_use = self.downsampled_angles_filtered  
+        else:  
+            angles_to_use = self.downsampled_angles[:num_rays]  
+      
+        self.tiled_angles = np.tile(angles_to_use, self.MAX_PARTICLES)  
   
 
-        # 4. 알고리즘 변형에 따른 처리 (RANGELIB_VAR)
         if self.RANGELIB_VAR == VAR_RADIAL_CDDT_OPTIMIZATIONS:
             if 'cddt' in self.WHICH_RM:
                 self.queries[:,:] = proposal_dist[:,:]
@@ -584,35 +573,25 @@ class ParticleFiler(Node):
                 self.weights = np.power(self.weights, self.INV_SQUASH_FACTOR)
             else:
                 self.get_logger().info('Cannot use radial optimizations with non-CDDT based methods, use rangelib_variant 2')
-        
         elif self.RANGELIB_VAR == VAR_REPEAT_ANGLES_EVAL_SENSOR_ONE_SHOT:
             self.queries[:,:] = proposal_dist[:,:]
             self.range_method.calc_range_repeat_angles_eval_sensor_model(self.queries, angles_to_use, obs, self.weights)
             np.power(self.weights, self.INV_SQUASH_FACTOR, self.weights)
-        
         elif self.RANGELIB_VAR == VAR_REPEAT_ANGLES_EVAL_SENSOR:
             if self.SHOW_FINE_TIMING:
                 t_start = time.time()
-            
+            # this version demonstrates what this would look like with coordinate space conversion pushed to rangelib
             self.queries[:,:] = proposal_dist[:,:]
-            
             if self.SHOW_FINE_TIMING:
                 t_init = time.time()
-            
-            # RangeLibc 호출 (이제 angles_to_use가 float32이므로 에러 안 남)
             self.range_method.calc_range_repeat_angles(self.queries, angles_to_use, self.ranges)
-            
             if self.SHOW_FINE_TIMING:
                 t_range = time.time()
-            
             # evaluate the sensor model on the GPU
             self.range_method.eval_sensor_model(obs, self.ranges, self.weights, num_rays, self.MAX_PARTICLES)
-            
             if self.SHOW_FINE_TIMING:
                 t_eval = time.time()
-            
             np.power(self.weights, self.INV_SQUASH_FACTOR, self.weights)
-            
             if self.SHOW_FINE_TIMING:
                 t_squash = time.time()
                 t_total = (t_squash - t_start) / 100.0
@@ -620,8 +599,9 @@ class ParticleFiler(Node):
             if self.SHOW_FINE_TIMING and self.iters % 10 == 0:
                 self.get_logger().info(str(['sensor_model: init: ', np.round((t_init-t_start)/t_total, 2), 'range:', np.round((t_range-t_init)/t_total, 2), \
                       'eval:', np.round((t_eval-t_range)/t_total, 2), 'squash:', np.round((t_squash-t_eval)/t_total, 2)]))
-        
         elif self.RANGELIB_VAR == VAR_CALC_RANGE_MANY_EVAL_SENSOR:
+            # this version demonstrates what this would look like with coordinate space conversion pushed to rangelib
+            # this part is inefficient since it requires a lot of effort to construct this redundant array
             self.queries[:,0] = np.repeat(proposal_dist[:,0], num_rays)
             self.queries[:,1] = np.repeat(proposal_dist[:,1], num_rays)
             self.queries[:,2] = np.repeat(proposal_dist[:,2], num_rays)
@@ -629,17 +609,20 @@ class ParticleFiler(Node):
 
             self.range_method.calc_range_many(self.queries, self.ranges)
 
+            # evaluate the sensor model on the GPU
             self.range_method.eval_sensor_model(obs, self.ranges, self.weights, num_rays, self.MAX_PARTICLES)
             np.power(self.weights, self.INV_SQUASH_FACTOR, self.weights)
-        
         elif self.RANGELIB_VAR == VAR_NO_EVAL_SENSOR_MODEL:
+            # this version directly uses the sensor model in Python, at a significant computational cost
             self.queries[:,0] = np.repeat(proposal_dist[:,0], num_rays)
             self.queries[:,1] = np.repeat(proposal_dist[:,1], num_rays)
             self.queries[:,2] = np.repeat(proposal_dist[:,2], num_rays)
             self.queries[:,2] += self.tiled_angles
 
+            # compute the ranges for all the particles in a single functon call
             self.range_method.calc_range_many(self.queries, self.ranges)
 
+            # resolve the sensor model by discretizing and indexing into the precomputed table
             obs /= float(self.map_info.resolution)
             ranges = self.ranges / float(self.map_info.resolution)
             obs[obs > self.MAX_RANGE_PX] = self.MAX_RANGE_PX
@@ -648,6 +631,7 @@ class ParticleFiler(Node):
             intobs = np.rint(obs).astype(np.uint16)
             intrng = np.rint(ranges).astype(np.uint16)
 
+            # compute the weight for each particle
             for i in range(self.MAX_PARTICLES):
                 weight = np.product(self.sensor_model_table[intobs,intrng[i*num_rays:(i+1)*num_rays]])
                 weight = np.power(weight, self.INV_SQUASH_FACTOR)
